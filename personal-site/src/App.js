@@ -8,12 +8,19 @@ import Navbar from './components/Navbar';
 // const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
 const sections = ["Home", "About Me", "Projects", "Contact Me"]
 
+const sectionss =    [ 
+                      {sectName:"Home", ref: null}, 
+                      {sectName:"About Me", ref: null}, 
+                      {sectName:"Projects", ref: null}, 
+                      {sectName:"Contact Me", ref: null}
+                    ]
+
 class App extends React.PureComponent {
   constructor(props){
     super(props)
-    this.classDaysRef = React.createRef()
-    this.seniorProfRef = React.createRef()
-    this.seniorColRef = React.createRef()
+    this.classDaysRef = sectionss[0].ref = React.createRef()
+    this.seniorProfRef = sectionss[1].ref = React.createRef()
+    this.seniorColRef = sectionss[2].ref = React.createRef()
     this.handleScroll = this.handleScroll.bind(this)
     this.navigateTo = this.navigateTo.bind(this)
     this.prevScroll = 0

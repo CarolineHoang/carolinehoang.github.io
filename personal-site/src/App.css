@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 2s linear;
   }
 }
 
@@ -541,13 +541,19 @@ h6 { font-size: 16px;}
     height: 60vh;
     margin-top: 15vh;
     /* transform: rotate(0deg); */
-    transform: rotate(180deg);
-    padding-right: 3vw;
+    /* transform: rotate(180deg); */
+    /* -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    /* -ms-filter: fliph; */ /*IE*/
+    /* filter: fliph; */ /*IE*/
+    padding-left: 3vw;
     width: 2vw;
     left: 0;
     margin-left: 0rem;
     border-bottom: none;  
-    border-left: solid grey 1px; 
+    border-right: solid grey 1px; 
   }
 }
 
@@ -566,23 +572,29 @@ h6 { font-size: 16px;}
   cursor: pointer;
   transition: border-color 0.2s ease-in;
 }
-.navItem[active=false] h3{
+.navItem h3{
+  font-size: 0.75rem;
+  margin: 0;
+}
+/* .navItem[active=false] h3{
   font-size: 0.75srem;
 }
 .navItem[active=true] h3{
   font-size: 0.75srem;
-}
+} */
 @media only screen and (min-width: 992px){
   .navItem[active=false]{
-    writing-mode: vertical-rl;
-    padding-left: 3.5vmin;
+    writing-mode: vertical-lr;
+    transform:scale(-1);
+    /* padding-left: 3.5vmin; */
     border-bottom: none;
     border-left: 2.2px solid transparent;
     /* ${props => props.active ? props.theme.lightGray : "transparent"}; */
   }
   .navItem[active=true]{
-    writing-mode: vertical-rl;
-    padding-left: 3.5vmin;
+    writing-mode: vertical-lr;
+    transform:scale(-1);
+    /* padding-left: 3.5vmin; */
     border-bottom: none;
     border-left: 2.2px solid black;
     /* ${props => props.active ? props.theme.lightGray : "transparent"}; */
