@@ -5,7 +5,8 @@ import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 
 
-const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
+// const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
+const sections = ["Home", "About Me", "Projects", "Contact Me"]
 
 class App extends React.PureComponent {
   constructor(props){
@@ -72,41 +73,46 @@ class App extends React.PureComponent {
   }
 
 
-render(){
-  return (
-    <div className="App">
-        <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <div className="nameHeadline">
-            Caroline Hoang
-          </div>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a> */}
-          <Navbar  sections={sections} 
-          navigateTo={this.navigateTo}
-          />
-          _ref
-          <LandingPage   _ref={this.classDaysRef} />
-          <LandingPage   _ref={this.seniorProfRef} />
-          <LandingPage   _ref={this.eniorColRef} />
+  render(){
+    return (
+      <div className="App">
+          {/* <header className="App-header"> */}
+          <header >
+            {/* <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <div className="nameHeadline">
+              Caroline Hoang
+            </div>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a> */}
+            <Navbar  sections={sections} 
+            active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}
+            />
+            {/* _ref */}
+            {/* <LandingPage   _ref={this.classDaysRef} /> */}
+            {/* <LandingPage   _ref={this.seniorProfRef} />
+            <LandingPage   _ref={this.eniorColRef} /> */}
 
-          {/* <LandingPage  classDaysRef={this.classDaysRef} seniorProfRef={this.seniorProfRef} seniorColRef={this.eniorColRef} /> */}
-          A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>
+            {/* <LandingPage   ref={this.classDaysRef} />
+            <LandingPage   ref={this.seniorProfRef} />
+            <LandingPage   ref={this.seniorColRef} /> */}
 
-          
-        </header>
-      </div>
-  );
-}
+            <LandingPage  classDaysRef={this.classDaysRef} seniorProfRef={this.seniorProfRef} seniorColRef={this.seniorColRef} />
+            {/* A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/> */}
+
+            
+          </header>
+        </div>
+    );
+  }
 }
 
 export default App;

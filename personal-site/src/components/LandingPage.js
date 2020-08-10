@@ -268,27 +268,94 @@ import React from "react";
             // `;
 //
 
-export default class LandingPage extends React.Component{
-    constructor(props) {
-	    super(props);
 
-	    this.state = {
-            // showSchool: false,
-            // showGroup: false,
-            // showRoom: false,
-            // Columbia: false,
-            // Barnard: false,
-            // GroupSize: 0,
-            // Suite: false,
-            // Single: false,
-            // Double: false,
-            // Triple: false
-	    };
-        // this.onChange = this.onChange.bind(this);
-        // this.toggle= this.toggle.bind(this);
-        // this.clear= this.clear.bind(this);
-        // this.unCheck= this.unCheck.bind(this);
-    }
+
+
+
+export default class LandingPage extends React.Component{
+    // constructor(props){
+    //     super(props)
+    //     this.classDaysRef = React.createRef()
+    //     this.seniorProfRef = React.createRef()
+    //     this.seniorColRef = React.createRef()
+    //     this.handleScroll = this.handleScroll.bind(this)
+    //     this.navigateTo = this.navigateTo.bind(this)
+    //     this.prevScroll = 0
+    //     this.state = {
+    //       navActive: 0
+    //     }
+    //   }
+    
+    //   navigateTo(i){
+    //     switch(i) {
+    //       case 0: 
+    //         window.scrollTo({top: this.classDaysRef.current.offsetTop, behavior: 'smooth'})
+    //         break
+    //       case 1:
+    //         window.scrollTo({top: this.seniorProfRef.current.offsetTop, behavior: 'smooth'})
+    //         break
+    //       case 2:
+    //         window.scrollTo({top: this.seniorColRef.current.offsetTop, behavior: 'smooth'})
+    //         break
+    //       default:
+    //         break
+    //     }
+    //   }
+    
+    
+    
+    //   componentDidMount(){
+    //     console.log("hi")
+    //       window.addEventListener('scroll', this.handleScroll)
+    //   }
+    
+    //   componentWillUnmount(){
+    //       window.removeEventListener('scroll', this.handleScroll);
+    //   }
+    
+    //   handleScroll(e){
+    //     const top1 = this.classDaysRef.current.offsetTop
+    //     const top2 = this.seniorProfRef.current.offsetTop
+    //     const top3 = this.seniorColRef.current.offsetTop
+    //     const currScroll = window.scrollY
+    //     const winHeight = window.innerHeight
+    //     const adjustedScroll = currScroll + 0.4 * winHeight
+    
+    //     // let scrollingUp = this.prevScroll > window.scrollY
+    
+    //     if(adjustedScroll > top1 && adjustedScroll < top2){
+    //       this.setState({navActive: 0})
+    //     }
+    //     if(adjustedScroll > top2 && adjustedScroll < top3){
+    //       this.setState({navActive: 1})
+    //     }
+    //     if(adjustedScroll > top3){
+    //       this.setState({navActive: 2})
+    //     }
+    
+    //     this.prevScroll = currScroll
+    //   }
+//
+    // constructor(props) {
+	//     super(props);
+
+	//     this.state = {
+    //         // showSchool: false,
+    //         // showGroup: false,
+    //         // showRoom: false,
+    //         // Columbia: false,
+    //         // Barnard: false,
+    //         // GroupSize: 0,
+    //         // Suite: false,
+    //         // Single: false,
+    //         // Double: false,
+    //         // Triple: false
+	//     };
+    //     // this.onChange = this.onChange.bind(this);
+    //     // this.toggle= this.toggle.bind(this);
+    //     // this.clear= this.clear.bind(this);
+    //     // this.unCheck= this.unCheck.bind(this);
+    // }
 //
     // onChange(e) {
     //     let target = e.target.id;
@@ -403,188 +470,188 @@ export default class LandingPage extends React.Component{
             // }
         return(
             <div ref={this.props._ref}>
-            <div className="nameHeadline" _ref={this.classDaysRef}>
-                Caroline Hoang
-            </div>
-            
+                <div className="nameHeadline" ref={this.props.classDaysRef}>
+                    Caroline Hoang
+                </div>
+                
                 <section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Dennis Ivanov</h1>
-			</div>
+                    <div class="main-container">
+                        <div class="greeting-wrapper">
+                            <h1>Hi, I'm Dennis Ivanov</h1>
+                        </div>
 
 
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
+                        <div class="intro-wrapper">
+                            <div class="nav-wrapper">
 
-					{/* <!-- Link around dots-wrapper added after tutorial video --> */}
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"></div>
-							<div id="dot-2" class="browser-dot"></div>
-							<div id="dot-3" class="browser-dot"></div>
-						</div>
-					</a>
-					
+                                {/* <!-- Link around dots-wrapper added after tutorial video --> */}
+                                <a href="index.html">
+                                    <div class="dots-wrapper">
+                                        <div id="dot-1" class="browser-dot"></div>
+                                        <div id="dot-2" class="browser-dot"></div>
+                                        <div id="dot-3" class="browser-dot"></div>
+                                    </div>
+                                </a>
+                                
 
-					<ul id="navigation">
-						<li><a href="#contact1">Contact</a></li>
+                                <ul id="navigation">
+                                    <li><a href="#contact1">Contact</a></li>
 
-					</ul>
-				</div>
+                                </ul>
+                            </div>
 
-				<div class="left-column">
-					<img id="profile_pic" src="images/Dennis.jpg" />
-					<h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
+                            <div class="left-column">
+                                <img id="profile_pic" src="images/Dennis.jpg" />
+                                <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
 
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
+                                <div id="theme-options-wrapper">
+                                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                                </div>
 
-					<p id="settings-note">*Theme settings will be saved for<br/>your next vist</p>
-				</div>
+                                <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p>
+                            </div>
 
-				<div class="right-column">
+                            <div class="right-column">
 
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                                <div id="preview-shadow">
+                                    <div id="preview">
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>What I Do</h3>
+                                        <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-	<section class="s2">
-		<div class="main-container">
+                <section class="s2">
+                    <div class="main-container">
 
-			<div class="about-wrapper">
-				<div class="about-me" _ref={this.seniorProfRef}>
-					<h4>More about me</h4>
+                        <div class="about-wrapper">
+                            <div class="about-me" ref={this.props.seniorProfRef}>
+                                <h4>More about me</h4>
 
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                                <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+                                <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
 
 
-					<hr/>
+                                <hr/>
 
-					<h4>TOP EXPERTISE</h4>
+                                <h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                                <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
 
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>Django</li>
-							<li>JavaScript</li>
-							<li>React</li>
-							<li>Postgres</li>
-						</ul>
+                                <div id="skills">
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Postgres</li>
+                                    </ul>
 
-						<ul>
-							<li>Google Maps API</li>
-							<li>JS Charts</li>
-							<li>AWS (RDS/S3)</li>
-							<li>Heroku</li>
-							<li>HTML/CSS</li>
-						</ul>
+                                    <ul>
+                                        <li>Google Maps API</li>
+                                        <li>JS Charts</li>
+                                        <li>AWS (RDS/S3)</li>
+                                        <li>Heroku</li>
+                                        <li>HTML/CSS</li>
+                                    </ul>
 
-					</div>
+                                </div>
 
-				</div>
+                            </div>
 
-				
-				<div class="social-links">
-					<img id="social_img" src="images/follow.jpg" />
-					<h3>Find me on Twitter & Youtube</h3>
+                            
+                            <div class="social-links">
+                                <img id="social_img" src="images/follow.jpg" />
+                                <h3>Find me on Twitter & Youtube</h3>
 
-					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
-					<br/>
-					<a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
-				</div>
-			</div>
+                                <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+                                <br/>
+                                <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+                            </div>
+                        </div>
 
-		</div>
-	</section>
+                    </div>
+                </section>
 
-	<section class="s1">
-		<div class="main-container" _ref={this.pseniorColRef} >
-            <a name="projects"></a>
-			<h3 style={{"text-align": "center"}} >Some of my past projects</h3>
+                <section class="s1">
+                    <div class="main-container" ref={this.props.seniorColRef} >
+                        <a name="projects"></a>
+                        <h3 style={{"text-align": "center"}} >Some of my past projects</h3>
 
-			<div class="post-wrapper">
+                        <div class="post-wrapper">
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/dash.jpg" />
-						<div class="post-preview">
-							<h6 class="post-title">Laboratory Management System</h6>
-							<p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-							<a href="post.html">Read More</a>
-						</div>
-					</div>
-				</div>
+                            <div>
+                                <div class="post">
+                                    <img class="thumbnail" src="images/dash.jpg" />
+                                    <div class="post-preview">
+                                        <h6 class="post-title">Laboratory Management System</h6>
+                                        <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                        <a href="post.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/ecom.jpg" />
-						<div class="post-preview">
-							<h6 class="post-title">Online Store - CoursePost Title</h6>
-							<p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
-							<a href="post.html">Read More</a>
-						</div>
-					</div>
-				</div>
+                            <div>
+                                <div class="post">
+                                    <img class="thumbnail" src="images/ecom.jpg" />
+                                    <div class="post-preview">
+                                        <h6 class="post-title">Online Store - CoursePost Title</h6>
+                                        <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                                        <a href="post.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
 
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/membership site.jpg" />
-						<div class="post-preview">
-							<h6 class="post-title">Membership Website</h6>
-							<p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-							<a href="post.html">Read More</a>
-						</div>
-					</div>
-				</div>
+                            <div>
+                                <div class="post">
+                                    <img class="thumbnail" src="images/membership site.jpg" />
+                                    <div class="post-preview">
+                                        <h6 class="post-title">Membership Website</h6>
+                                        <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                        <a href="post.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
 
-			</div>
-		</div>
-	</section>
+                        </div>
+                    </div>
+                </section>
 
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style={{"text-align": "center"}} >Get In Touch</h3>
+                <section class="s2">
+                    <div class="main-container">
+                        <a href=""></a>
+                        <h3 style={{"text-align": "center"}} >Get In Touch</h3>
 
-			<form id="contact-form">
-				<a name="contact1"></a>
+                        <form id="contact-form">
+                            <a name="contact1"></a>
 
-				<label>Name</label>
-				<input class="input-field" type="text" name="name" />
+                            <label>Name</label>
+                            <input class="input-field" type="text" name="name" />
 
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject" />
+                            <label>Subject</label>
+                            <input class="input-field" type="text" name="subject" />
 
-				<label>Email</label>
-				<input class="input-field" type="text" name="email" />
+                            <label>Email</label>
+                            <input class="input-field" type="text" name="email" />
 
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+                            <label>Message</label>
+                            <textarea class="input-field" name="message"></textarea>
 
-				<input id="submit-btn" type="submit" value="Send" />
-			</form>
-		</div>
-	</section> 
+                            <input id="submit-btn" type="submit" value="Send" />
+                        </form>
+                    </div>
+                </section> 
             </div>
         //
             // <FilterContainer>

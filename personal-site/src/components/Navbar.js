@@ -100,6 +100,8 @@ export default class Navbar extends React.Component {
     render(){
         const NavItems = this.props.sections.map((el, i)=>(
             <div className = "navItem" key={i} 
+            // active={"false"}
+            active={this.props.active === i ? "true" : "false"} 
             // active={this.props.active === i} 
             onClick={()=>{this.props.navigateTo(i)}}>
                 <h3>{el}</h3>
@@ -112,7 +114,8 @@ export default class Navbar extends React.Component {
                 <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/>
                 {/* <Desktop> */}
                     <div className = "itemContainer">
-                        {[...NavItems].reverse()}
+                        {[...NavItems]}
+                        {/* {[...NavItems].reverse()} */}
                     </div>
                 {/* </Desktop> */}
                 {/* <MobileAndTablet> */}
