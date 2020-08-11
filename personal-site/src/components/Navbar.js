@@ -104,7 +104,7 @@ export default class Navbar extends React.Component {
             active={this.props.active === i ? "true" : "false"} 
             // active={this.props.active === i} 
             onClick={()=>{this.props.navigateTo(i)}}>
-                <h3>{el}</h3>
+                <h3>{el.sectName}</h3>
             </div>
         ))
         // Because css only supports writing downwards and we want to write upwards, we

@@ -6,9 +6,9 @@ import Navbar from './components/Navbar';
 
 
 // const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
-const sections = ["Home", "About Me", "Projects", "Contact Me"]
+// const sections = ["Home", "About Me", "Projects", "Contact Me"]
 
-const sectionss =    [ 
+const sections =    [ 
                       {sectName:"Home", ref: null}, 
                       {sectName:"About Me", ref: null}, 
                       {sectName:"Projects", ref: null}, 
@@ -18,9 +18,10 @@ const sectionss =    [
 class App extends React.PureComponent {
   constructor(props){
     super(props)
-    this.classDaysRef = sectionss[0].ref = React.createRef()
-    this.seniorProfRef = sectionss[1].ref = React.createRef()
-    this.seniorColRef = sectionss[2].ref = React.createRef()
+    this.classDaysRef = sections[0].ref = React.createRef()
+    this.seniorProfRef = sections[1].ref = React.createRef()
+    this.seniorColRef = sections[2].ref = React.createRef()
+    this.seniorColRef1 = sections[3].ref = React.createRef()
     this.handleScroll = this.handleScroll.bind(this)
     this.navigateTo = this.navigateTo.bind(this)
     this.prevScroll = 0
@@ -40,6 +41,9 @@ class App extends React.PureComponent {
       case 2:
         window.scrollTo({top: this.seniorColRef.current.offsetTop, behavior: 'smooth'})
         break
+      case 3:
+          window.scrollTo({top: this.seniorColRef1.current.offsetTop, behavior: 'smooth'})
+          break
       default:
         break
     }
@@ -60,6 +64,7 @@ class App extends React.PureComponent {
     const top1 = this.classDaysRef.current.offsetTop
     const top2 = this.seniorProfRef.current.offsetTop
     const top3 = this.seniorColRef.current.offsetTop
+    const top4 = this.seniorColRef1.current.offsetTop
     const currScroll = window.scrollY
     const winHeight = window.innerHeight
     const adjustedScroll = currScroll + 0.4 * winHeight
@@ -72,8 +77,11 @@ class App extends React.PureComponent {
     if(adjustedScroll > top2 && adjustedScroll < top3){
       this.setState({navActive: 1})
     }
-    if(adjustedScroll > top3){
+    if(adjustedScroll > top3 && adjustedScroll < top4){
       this.setState({navActive: 2})
+    }
+    if(adjustedScroll > top4 ){
+      this.setState({navActive: 3})
     }
 
     this.prevScroll = currScroll
@@ -112,7 +120,7 @@ class App extends React.PureComponent {
             <LandingPage   ref={this.seniorProfRef} />
             <LandingPage   ref={this.seniorColRef} /> */}
 
-            <LandingPage  classDaysRef={this.classDaysRef} seniorProfRef={this.seniorProfRef} seniorColRef={this.seniorColRef} />
+            <LandingPage  sections= {sections} classDaysRef={this.classDaysRef} seniorProfRef={this.seniorProfRef} seniorColRef={this.seniorColRef} />
             {/* A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/> */}
 
             

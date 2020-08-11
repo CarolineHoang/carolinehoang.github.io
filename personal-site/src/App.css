@@ -44,8 +44,9 @@
 
 
 :root{
-	--mainColor:#eaeaea;
-	--secondaryColor:#fff;
+  --mainColor:#eaeaea;
+  --secondaryColor:#eaeaea2f;
+	/* --secondaryColor:#fff; */
 
 	--borderColor:#c1c1c1;
 
@@ -106,7 +107,7 @@ h6 { font-size: 16px;}
 .s1{
 	background-color: var(--mainColor);
 	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
+  overflow:auto;
 }
 
 .s2{
@@ -115,11 +116,39 @@ h6 { font-size: 16px;}
 	overflow:auto;
 }
 
+.landingImage{
+  width: 100%;
+  /* height: 100%; */
+  height: 10;
+  margin: auto;
+  /* https://i.pinimg.com/originals/4c/9f/f1/4c9ff1f84d726f966103ff802972e9ae.gif */
+  /* https://wallpaperaccess.com/full/2471303.gif */
+  
+  /* background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4d91f67-0dd8-42e9-9467-f64b555ef1d3/db06xk0-502cda3b-e7e4-4cc3-9900-0b036ea2ef99.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDRkOTFmNjctMGRkOC00MmU5LTk0NjctZjY0YjU1NWVmMWQzXC9kYjA2eGswLTUwMmNkYTNiLWU3ZTQtNGNjMy05OTAwLTBiMDM2ZWEyZWY5OS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.aXoHR9KrDvKCu_IUvCyOF8U-OjkYhm7pkDkzgwL45a4) no-repeat center; */
+  background: url(https://i.pinimg.com/originals/9c/15/ac/9c15ac1664e13633d1fda91d0a2bae05.gif) no-repeat center;
+  
+  /* background: url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center; */
+  /* background: url(https://static1.squarespace.com/static/580fa9f7e58c62cb7501937b/5810e6e5579fb3fe2a9cc9e3/59309a3a3a0411c3f007ad8c/1496358102572/bedroom.gif?format=2500w) no-repeat center; */
+  /* background: url(https://wallpaperaccess.com/full/869923.gif) no-repeat center; */
+  /* background: url(https://i.pinimg.com/originals/30/23/83/302383c530b39f5a65f11b4ef986e3ce.gif) no-repeat center; */
+  /* background: url(https://wallpaperaccess.com/full/2471303.gif) no-repeat center; */
+  /* background: url(https://thumbs.gfycat.com/ForcefulEnragedGermanshepherd-max-1mb.gif) no-repeat center; */
+  /* background: url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center; */
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+  position: relative;
+  /* background-position: 0px 5px;  */
+  background-position-y: -100px;
+  top: 0;
+  bottom: 0;
+}
 
 
 
 .main-container{
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -128,8 +157,10 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 10em;
-
+  /* min-height: 10em; */
+  width: 100%;
+  height: 100vh;
+  /* color: aliceblue; */
 }
 
 .intro-wrapper{
@@ -640,4 +671,45 @@ h6 { font-size: 16px;}
   .crownLogo{
     left: 1.8vw;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.LPContentContainer{
+  width:100%;
+  /* width:80%; */
+  margin: auto;
 }

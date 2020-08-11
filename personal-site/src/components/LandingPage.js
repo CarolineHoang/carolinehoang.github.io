@@ -469,16 +469,19 @@ export default class LandingPage extends React.Component{
             //     }
             // }
         return(
-            <div ref={this.props._ref}>
-                <div className="nameHeadline" ref={this.props.classDaysRef}>
+            <div className="LPContentContainer" >
+                {/* <div className="nameHeadline">
                     Caroline Hoang
-                </div>
+                </div> */}
                 
-                <section class="s1">
+                <section class="s1 landingImage" ref={this.props.sections[0].ref}>
                     <div class="main-container">
                         <div class="greeting-wrapper">
-                            <h1>Hi, I'm Dennis Ivanov</h1>
+                            <h1 className="nameHeadline">Caroline Hoang</h1>
+                            {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
                         </div>
+                        {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
+                        <div ><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%'  allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p> */}
 
 
                         <div class="intro-wrapper">
@@ -531,11 +534,11 @@ export default class LandingPage extends React.Component{
                     </div>
                 </section>
 
-                <section class="s2">
+                <section class="s2 landingImage" ref={this.props.sections[1].ref}>
                     <div class="main-container">
 
                         <div class="about-wrapper">
-                            <div class="about-me" ref={this.props.seniorProfRef}>
+                            <div class="about-me">
                                 <h4>More about me</h4>
 
                                 <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
@@ -584,8 +587,8 @@ export default class LandingPage extends React.Component{
                     </div>
                 </section>
 
-                <section class="s1">
-                    <div class="main-container" ref={this.props.seniorColRef} >
+                <section class="s1" ref={this.props.sections[2].ref}>
+                    <div class="main-container">
                         <a name="projects"></a>
                         <h3 style={{"text-align": "center"}} >Some of my past projects</h3>
 
@@ -628,7 +631,7 @@ export default class LandingPage extends React.Component{
                     </div>
                 </section>
 
-                <section class="s2">
+                <section class="s2" ref={this.props.sections[3].ref}>
                     <div class="main-container">
                         <a href=""></a>
                         <h3 style={{"text-align": "center"}} >Get In Touch</h3>
