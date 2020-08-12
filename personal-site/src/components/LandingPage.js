@@ -480,6 +480,9 @@ export default class LandingPage extends React.Component{
                         <div class="main-container">
                             <div class="greeting-wrapper">
                                 <h1 className="nameHeadline">Caroline Hoang</h1>
+                                {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
+                                <h3 className="subHeadline" >CS Student, Developer, Something</h3>
+
                                 {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
                             </div>
                             {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
@@ -506,7 +509,7 @@ export default class LandingPage extends React.Component{
                                 </div>
 
                                 <div class="left-column">
-                                    <img id="profile_pic" src="src/components/profile-image.jpg" />
+                                    <img id="profile_pic" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/profile-image.jpg?raw=true" />
                                     {/* <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
 
                                     <div id="theme-options-wrapper">
@@ -525,8 +528,8 @@ export default class LandingPage extends React.Component{
                                         <div id="preview">
                                             <div id="corner-tl" class="corner"></div>
                                             <div id="corner-tr" class="corner"></div>
-                                            <h3>What I Do</h3>
-                                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                                            <h3>Who am I?</h3>
+                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
                                             <div id="corner-br" class="corner"></div>
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
@@ -822,7 +825,8 @@ export default class LandingPage extends React.Component{
                                 {/* <a href="" target="_blank"> Like us!</a> */}
                     {/* </div> */}
 
-                    <div class="fl-fl float-tw">
+
+                    {/* <div class="fl-fl float-tw">
                         <div class="mediaIcon"><i class="fa fa-twitter"></i></div>
                         <a href="" target="_blank">Follow us!</a>
                     </div>
@@ -841,7 +845,37 @@ export default class LandingPage extends React.Component{
                     <div class="fl-fl float-pn">
                         <div class="mediaIcon"><i class="fa fa-pinterest"></i></div>
                         <a href="" target="_blank">Follow us!</a>
-                    </div>
+                    </div> */}
+                    <a href="mailto: caroline.hoang@columbia.edu" target="_blank">
+                        <div class="fl-fl float-tw">
+                            <div class="mediaIcon"><i class="fa fa-envelope-open"></i></div>
+                            <span> Contact Me!</span>
+                        </div>
+                    </a>
+                    <a href="mailto: caroline.hoang@columbia.edu" target="_blank">
+                        <div class="fl-fl float-gp">
+                            <div class="mediaIcon"><i class="fa fa-file-alt"></i></div>
+                            <span>My Resume!</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/CarolineHoang/" target="_blank">
+                        <div class="fl-fl float-rs">
+                            <div class="mediaIcon"><i class="fa fa-github"></i></div>
+                            <span>GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank">
+                        <div class="fl-fl float-ig">
+                            <div class="mediaIcon"><i class="fa fa-linkedin"></i></div>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/caroline.hoang.35977/" target="_blank">
+                        <div class="fl-fl float-pn">
+                            <div class="mediaIcon"><i class="fa fa-facebook-f"></i></div>
+                            <span>Facebook</span>
+                        </div>
+                    </a>
                 </div>
                 {/* <div class="backdrop">
                     <p class="text">Taitō <i class="fa fa-facebook"></i></p>

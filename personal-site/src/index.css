@@ -22,4 +22,13 @@ code {
 .nameHeadline{
   font-family: 'Montserrat Subrayada', sans-serif;
   color: aliceblue;
+  margin-bottom:0;
+}
+
+
+.subHeadline{
+  font-family: 'Montserrat', sans-serif;
+  color: #3E6EA7;
+  font-weight: 900;
+  /* font-size: 2rem; */
 }

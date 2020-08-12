@@ -367,9 +367,11 @@ box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
 
 	/* height: 200px;
   width: 200px; */
-  height: 30vw;
-	width: 30vw;
-	object-fit: cover;
+  /* height: 30vw; */
+  width: 30vw;
+  /* background-size:  auto auto; */
+  /* object-fit: cover; */
+  opacity: .86;
 	border:2px solid var(--borderColor);
 }
 
@@ -939,7 +941,7 @@ box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
 
 .fl-fl {
   display: flex;
-  background-color: #000000;
+  background-color: #0000008f;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 4px;
@@ -955,7 +957,8 @@ box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
-  transition: all .25s ease;
+  transition: all .25s ease, border .1s ease-in;
+
   /* background-color: transparent */
 }
 
@@ -974,9 +977,12 @@ box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
 
 .fl-fl:hover {
   right: 0;
+  border-top: 1px solid white; 
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;  
 }
 
-.fl-fl a {
+.fl-fl span {
   color: #fff !important;
   text-decoration: none;
   text-align: center;
