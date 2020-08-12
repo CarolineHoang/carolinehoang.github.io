@@ -10,9 +10,9 @@ import Navbar from './components/Navbar';
 
 const sections =    [ 
                       {sectName:"Home", ref: null}, 
-                      {sectName:"About Me", ref: null}, 
+                      {sectName:"About", ref: null}, 
                       {sectName:"Projects", ref: null}, 
-                      {sectName:"Contact Me", ref: null}
+                      {sectName:"Contact", ref: null}
                     ]
 
 class App extends React.PureComponent {

@@ -506,8 +506,8 @@ export default class LandingPage extends React.Component{
                                 </div>
 
                                 <div class="left-column">
-                                    <img id="profile_pic" src="images/Dennis.jpg" />
-                                    <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
+                                    <img id="profile_pic" src="src/components/profile-image.jpg" />
+                                    {/* <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
 
                                     <div id="theme-options-wrapper">
                                         <div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -516,7 +516,7 @@ export default class LandingPage extends React.Component{
                                         <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                                     </div>
 
-                                    <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p>
+                                    <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p> */}
                                 </div>
 
                                 <div class="right-column">
@@ -537,7 +537,7 @@ export default class LandingPage extends React.Component{
                     </section>
 
                     <section className="s2 " ref={this.props.sections[1].ref}>
-                        <div class="main-container">
+                        <div class="main-container panelShade">
 
                             <div class="about-wrapper">
                                 <div class="about-me">
@@ -585,28 +585,6 @@ export default class LandingPage extends React.Component{
                                     <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
                                 </div>
                             </div>
-                            <div class="about-wrapper">
-                                <div class="about-me">
-                                    <h4>More about me</h4>
-
-                                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
-                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
-
-
-                                    <hr/>
-                                </div>
-
-                                
-                                <div class="social-links">
-                                    <img id="social_img" src="images/follow.jpg" />
-                                    <h3>Find me on Twitter & Youtube</h3>
-
-                                    <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
-                                    <br/>
-                                    <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
-                                </div>
-                            </div>
 
                         </div>
                     </section>
@@ -614,9 +592,75 @@ export default class LandingPage extends React.Component{
                 <div className= "landingImage-backwards">
                     <section className="s1" ref={this.props.sections[2].ref}>
                         <div class="main-container">
-                            <h3 style={{"text-align": "center"}} >Some of my past projects</h3>
+                            <h3 className='categoryTitle' >Some of my Projects</h3>
 
                             <div class="post-wrapper">
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/dash.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">ScoreIT</h6>
+                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/ecom.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Spectator Site</h6>
+                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">The Shaft</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Vocaloid Site</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Looper</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">RPG</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {/* <div class="post-wrapper">
 
                                 <div>
                                     <div class="post">
@@ -727,63 +771,7 @@ export default class LandingPage extends React.Component{
                                     </div>
                                 </div>
 
-                            </div>
-                            <div class="post-wrapper">
-
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/dash.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Laboratory Management System</h6>
-                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/ecom.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Online Store - CoursePost Title</h6>
-                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Membership Website</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Membership Website</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Membership Website</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                            </div> */}
                             
                         </div>
                     </section>
@@ -791,7 +779,7 @@ export default class LandingPage extends React.Component{
                     <section class="s2" ref={this.props.sections[3].ref}>
                         <div class="main-container">
                             <a href=""></a>
-                            <h3 style={{"text-align": "center"}} >Get In Touch</h3>
+                            <h3 className="categoryTitle" >Get In Touch</h3>
 
                             <form id="contact-form">
                                 <a name="contact1"></a>
@@ -812,7 +800,55 @@ export default class LandingPage extends React.Component{
                             </form>
                         </div>
                     </section> 
+
+                    <section class="footer">
+                        
+                            <a href=""></a>
+                            Copyright Caroline Hoang . Resume . Contaact Me
+                            {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
+
+            
+                    </section> 
                 </div>
+                <div class="float-sm">
+                    {/* <div class="backdrop float-right">
+                        <p class="text">Taitō <i class="fa fa-facebook"></i></p>
+                    </div> */}
+                    {/* <div class="text "> Like us!</div> */}
+                    
+                    {/* <div class="fl-fl float-fb"> */}
+                                {/* <i class="fa fa-facebook"></i> */}
+                        {/* <p class="text backdrop2"> Like us!</p> */}
+                                {/* <a href="" target="_blank"> Like us!</a> */}
+                    {/* </div> */}
+
+                    <div class="fl-fl float-tw">
+                        <div class="mediaIcon"><i class="fa fa-twitter"></i></div>
+                        <a href="" target="_blank">Follow us!</a>
+                    </div>
+                    <div class="fl-fl float-gp">
+                        <div class="mediaIcon"><i class="fa fa-google-plus"></i></div>
+                        <a href="" target="_blank">Recommend us!</a>
+                    </div>
+                    <div class="fl-fl float-rs">
+                        <div class="mediaIcon"><i class="fa fa-rss"></i></div>
+                        <a href="" target="_blank">Follow via RSS</a>
+                    </div>
+                    <div class="fl-fl float-ig">
+                        <div class="mediaIcon"><i class="fa fa-instagram"></i></div>
+                        <a href="" target="_blank">Follow us!</a>
+                    </div>
+                    <div class="fl-fl float-pn">
+                        <div class="mediaIcon"><i class="fa fa-pinterest"></i></div>
+                        <a href="" target="_blank">Follow us!</a>
+                    </div>
+                </div>
+                {/* <div class="backdrop">
+                    <p class="text">Taitō <i class="fa fa-facebook"></i></p>
+                </div>
+                <div class="backdrop2 fl-fl float-tw">
+                    <p class="text">Taitō</p>
+                </div> */}
             </div>
         //
             // <FilterContainer>
