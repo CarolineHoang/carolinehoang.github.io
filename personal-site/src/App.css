@@ -114,7 +114,7 @@ header{
 	/* background-color: var(--mainColor); */
 	/* border-bottom:1px solid var(--borderColor); */
   overflow:auto;
-  padding: 0px 8vw;
+  padding: 0px 10vw;
   /* note: the width of the side navbar is 10vw */
 }
 
@@ -122,7 +122,7 @@ header{
 	/* background-color: var(--secondaryColor);
 	border-bottom:1px solid var(--borderColor); */
   overflow:auto;
-  padding: 0px 8vw;
+  padding: 0px 10vw;
 }
 .landingImageS{
   width: 100%;

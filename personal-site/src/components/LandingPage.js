@@ -599,8 +599,11 @@ export default class LandingPage extends React.Component{
 
                             <div class="post-wrapper">
 
-                                <div>
+                                <div      >
                                     <div class="post">
+                                        {/* <img class="thumbnail" src="images/dash.jpg" /> */}
+                                        {/* <iframe src="https://www.columbiaspectator.com/" class="thumbnail"></iframe> */}
+                                        {/* <object  type="text/html" data="https://www.sitepoint.com/community/t/embed-a-webpage-within-another-webpage/230037/4"></object> */}
                                         <img class="thumbnail" src="images/dash.jpg" />
                                         <div class="post-preview">
                                             <h6 class="post-title">ScoreIT</h6>
@@ -641,6 +644,7 @@ export default class LandingPage extends React.Component{
                                         </div>
                                     </div>
                                 </div>
+                                {/* <div></div> */}
                                 <div>
                                     <div class="post">
                                         <img class="thumbnail" src="images/membership site.jpg" />
@@ -661,6 +665,7 @@ export default class LandingPage extends React.Component{
                                         </div>
                                     </div>
                                 </div>
+                                {/* <div></div> */}
 
                             </div>
                         </div>
