@@ -30,20 +30,20 @@ class App extends React.PureComponent {
     }
   }
 
-  navigateTo(i){
+  navigateTo(i ){
     switch(i) {
       case 0: 
-        window.scrollTo({top: this.classDaysRef.current.offsetTop, behavior: 'smooth'})
+        window.scrollTo({top: this.classDaysRef.current.offsetTop + this.classDaysRef.current.parentElement.offsetTop , behavior: 'smooth'})
         break
       case 1:
-        window.scrollTo({top: this.seniorProfRef.current.offsetTop, behavior: 'smooth'})
+        window.scrollTo({top: this.seniorProfRef.current.offsetTop + this.seniorProfRef.current.parentElement.offsetTop , behavior: 'smooth'})
         break
       case 2:
-        window.scrollTo({top: this.seniorColRef.current.offsetTop, behavior: 'smooth'})
+        window.scrollTo({top: this.seniorColRef.current.offsetTop + this.seniorColRef.current.parentElement.offsetTop , behavior: 'smooth'})
         break
       case 3:
-          window.scrollTo({top: this.seniorColRef1.current.offsetTop, behavior: 'smooth'})
-          break
+          window.scrollTo({top: this.seniorColRef1.current.offsetTop + this.seniorColRef1.current.parentElement.offsetTop , behavior: 'smooth'})
+        break
       default:
         break
     }
@@ -61,20 +61,24 @@ class App extends React.PureComponent {
   }
 
   handleScroll(e){
-    const top1 = this.classDaysRef.current.offsetTop
-    const top2 = this.seniorProfRef.current.offsetTop
-    const top3 = this.seniorColRef.current.offsetTop
-    const top4 = this.seniorColRef1.current.offsetTop
+    const top1 = this.classDaysRef.current.offsetTop + this.classDaysRef.current.parentElement.offsetTop 
+    const top2 = this.seniorProfRef.current.offsetTop + this.seniorProfRef.current.parentElement.offsetTop 
+    const top3 = this.seniorColRef.current.offsetTop + this.seniorColRef.current.parentElement.offsetTop 
+    const top4 = this.seniorColRef1.current.offsetTop + this.seniorColRef1.current.parentElement.offsetTop 
     const currScroll = window.scrollY
     const winHeight = window.innerHeight
     const adjustedScroll = currScroll + 0.4 * winHeight
 
-    // let scrollingUp = this.prevScroll > window.scrollY
 
+
+    // let scrollingUp = this.prevScroll > window.scrollY
+    console.log('adjustedScroll:',adjustedScroll, '      top3:', top3, '     parent:', this.seniorColRef.current.parentElement.offsetTop, '     ref:', this.seniorColRef.current )
     if(adjustedScroll > top1 && adjustedScroll < top2){
+      console.log('>>>0')
       this.setState({navActive: 0})
     }
     if(adjustedScroll > top2 && adjustedScroll < top3){
+      console.log('>>>1')
       this.setState({navActive: 1})
     }
     if(adjustedScroll > top3 && adjustedScroll < top4){
@@ -83,6 +87,10 @@ class App extends React.PureComponent {
     if(adjustedScroll > top4 ){
       this.setState({navActive: 3})
     }
+    // if(adjustedScroll > top3 ){
+    //   console.log('>>>2')
+    //   this.setState({navActive: 2})
+    // }
 
     this.prevScroll = currScroll
   }
@@ -120,7 +128,7 @@ class App extends React.PureComponent {
             <LandingPage   ref={this.seniorProfRef} />
             <LandingPage   ref={this.seniorColRef} /> */}
 
-            <LandingPage  sections= {sections} classDaysRef={this.classDaysRef} seniorProfRef={this.seniorProfRef} seniorColRef={this.seniorColRef} />
+            <LandingPage  sections= {sections}  />
             {/* A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/>A<br/> */}
 
             

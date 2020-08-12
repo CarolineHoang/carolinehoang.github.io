@@ -104,28 +104,37 @@ h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 
 
+header{
+  background-color: #36B4DB;
+}
+
 .s1{
-	background-color: var(--mainColor);
-	border-bottom:1px solid var(--borderColor);
+  background-color: transparent;
+	/* background-color: var(--mainColor); */
+	/* border-bottom:1px solid var(--borderColor); */
   overflow:auto;
+  padding: 0px 8vw;
+  /* note: the width of the side navbar is 10vw */
 }
 
 .s2{
-	background-color: var(--secondaryColor);
-	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
+	/* background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor); */
+  overflow:auto;
+  padding: 0px 8vw;
 }
-
-.landingImage{
+.landingImageS{
   width: 100%;
+  /* height: 300vh; */
   /* height: 100%; */
   height: 10;
   margin: auto;
   /* https://i.pinimg.com/originals/4c/9f/f1/4c9ff1f84d726f966103ff802972e9ae.gif */
   /* https://wallpaperaccess.com/full/2471303.gif */
   
+  
   /* background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4d91f67-0dd8-42e9-9467-f64b555ef1d3/db06xk0-502cda3b-e7e4-4cc3-9900-0b036ea2ef99.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDRkOTFmNjctMGRkOC00MmU5LTk0NjctZjY0YjU1NWVmMWQzXC9kYjA2eGswLTUwMmNkYTNiLWU3ZTQtNGNjMy05OTAwLTBiMDM2ZWEyZWY5OS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.aXoHR9KrDvKCu_IUvCyOF8U-OjkYhm7pkDkzgwL45a4) no-repeat center; */
-  background: url(https://i.pinimg.com/originals/9c/15/ac/9c15ac1664e13633d1fda91d0a2bae05.gif) no-repeat center;
+  background: url(https://i.pinimg.com/originals/9c/15/ac/9c15ac1664e13633d1fda91d0a2bae05.gif) no-repeat center, url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center;
   
   /* background: url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center; */
   /* background: url(https://static1.squarespace.com/static/580fa9f7e58c62cb7501937b/5810e6e5579fb3fe2a9cc9e3/59309a3a3a0411c3f007ad8c/1496358102572/bedroom.gif?format=2500w) no-repeat center; */
@@ -135,23 +144,126 @@ h6 { font-size: 16px;}
   /* background: url(https://thumbs.gfycat.com/ForcefulEnragedGermanshepherd-max-1mb.gif) no-repeat center; */
   /* background: url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center; */
   background-size: cover;
+  /* background-size: 100% auto; */
   /* background-size: contain; */
   /* background-attachment: scroll; */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
+  z-index: 1;
+  background-position: 0px 0px;
+  /* background-position: 0px 0px, 0px 100px;  */
   /* background-position: 0px 5px;  */
-  background-position-y: -100px;
+  /* background-position-y: -100px; */
   top: 0;
   bottom: 0;
+  /* -webkit-box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1);
+  -moz-box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1);
+  box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1); */
+
+  /* -webkit-box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1);
+  -moz-box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1);
+  box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1); */
+
+  /* -webkit-box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1);
+-moz-box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1);
+box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1); */
+/* -webkit-box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
+-moz-box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
+box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1); */
+}
+.landingImage{
+  width: 100%;
+  /* height: 300vh; */
+  /* height: 100%; */
+  height: 10;
+  margin: auto;
+  /* https://i.pinimg.com/originals/4c/9f/f1/4c9ff1f84d726f966103ff802972e9ae.gif */
+  /* https://wallpaperaccess.com/full/2471303.gif */
+  
+  
+  /* background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4d91f67-0dd8-42e9-9467-f64b555ef1d3/db06xk0-502cda3b-e7e4-4cc3-9900-0b036ea2ef99.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDRkOTFmNjctMGRkOC00MmU5LTk0NjctZjY0YjU1NWVmMWQzXC9kYjA2eGswLTUwMmNkYTNiLWU3ZTQtNGNjMy05OTAwLTBiMDM2ZWEyZWY5OS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.aXoHR9KrDvKCu_IUvCyOF8U-OjkYhm7pkDkzgwL45a4) no-repeat center; */
+  background: url(https://i.pinimg.com/originals/9c/15/ac/9c15ac1664e13633d1fda91d0a2bae05.gif) no-repeat center, url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center;
+  
+  /* background: url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center; */
+  /* background: url(https://static1.squarespace.com/static/580fa9f7e58c62cb7501937b/5810e6e5579fb3fe2a9cc9e3/59309a3a3a0411c3f007ad8c/1496358102572/bedroom.gif?format=2500w) no-repeat center; */
+  /* background: url(https://wallpaperaccess.com/full/869923.gif) no-repeat center; */
+  /* background: url(https://i.pinimg.com/originals/30/23/83/302383c530b39f5a65f11b4ef986e3ce.gif) no-repeat center; */
+  /* background: url(https://wallpaperaccess.com/full/2471303.gif) no-repeat center; */
+  /* background: url(https://thumbs.gfycat.com/ForcefulEnragedGermanshepherd-max-1mb.gif) no-repeat center; */
+  /* background: url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center; */
+  background-size: cover;
+  /* background-size: 100% auto; */
+  /* background-size: contain; */
+  /* background-attachment: scroll; */
+  /* background-attachment: fixed; */
+  position: relative;
+  z-index: 1;
+  background-position: 0px 0px;
+  /* background-position: 0px 0px, 0px 100px;  */
+  /* background-position: 0px 5px;  */
+  /* background-position-y: -100px; */
+  top: 0;
+  bottom: 0;
+  /* -webkit-box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1);
+  -moz-box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1);
+  box-shadow: inset 0px -125px 53px -31px rgba(0,0,9,1); */
+
+  /* -webkit-box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1);
+  -moz-box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1);
+  box-shadow: inset 0px -200px 53px -31px rgba(0,0,9,1); */
+
+  /* -webkit-box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1);
+-moz-box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1);
+box-shadow: inset 0px -200px 53px 37px rgba(0,0,9,1); */
+-webkit-box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
+-moz-box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
+box-shadow: inset 0px -200px 159px -60px rgba(0,0,9,1);
+}
+.landingImage-backwards{
+  width: 100%;
+  /* height: 300vh; */
+  /* height: 100%; */
+  /* height: 10; */
+  margin: auto;
+  
+  position: relative;
+  top: 1;
+  z-index: 1;
+
+  background: transparent;
 }
 
+
+.landingImage-backwards::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  /* opacity: .4;  */
+  z-index: -1;
+  /* background: url(https://i.pinimg.com/originals/9c/15/ac/9c15ac1664e13633d1fda91d0a2bae05.gif) no-repeat center, url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center; */
+
+  background:  url(https://archive-media-0.nyafuu.org/wg/image/1477/71/1477710506455.gif) no-repeat center;
+  /* transform: rotate(180deg); */
+  transform: scaleY(-1);
+  background-size: cover;
+  background-position: 0% 100%;
+}
 
 
 .main-container{
 	width: 100%;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
+.screen-container{
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor);
+}
 
 .greeting-wrapper{
 	display: grid;
@@ -527,9 +639,23 @@ h6 { font-size: 16px;}
     top: 0vh;
     z-index: 5;
     height:3.2rem;
+    /* background: linear-gradient(180deg, rgba(62,110,167,1) 0%, rgba(255,144,144,0.335171568627451) 100%, rgba(255,155,155,1) 100%); */
+    /* background: linear-gradient(180deg, rgba(62,110,167,1) 0%, rgba(255,144,144,0) 100%, rgba(255,155,155,1) 100%); */
+    /* background: linear-gradient(180deg, rgb(8, 76, 158) 0%, rgba(255,144,144,0) 100%, rgba(255,155,155,1) 100%); */
+    /* background: linear-gradient(180deg, rgb(2, 19, 39) 0%, rgba(255,144,144,0) 100%, rgba(255,155,155,1) 100%); */
+    /* background: linear-gradient(180deg, rgba(62,110,167,1) 0%, rgba(247,143,145,0) 93%, rgba(255,144,144,0) 100%, rgba(255,155,155,1) 100%); */
+    /* background: linear-gradient(180deg, rgba(3,16,31,1) 0%, rgba(247,143,145,0) 93%, rgba(255,144,144,0) 100%, rgba(255,155,155,1) 100%); */
+    background-color: rgba(3, 16, 31, 0.486);
+    border: none;
+
+
+    /* background-color: #36B4DB; */
+    
     /* background-color: ${props => props.theme.cream}; */
 
 }
+
+/* .navbarWrapperVisTop */
 
 @media only screen and (min-width: 992px){
   .navbarWrapper h3 {
@@ -562,7 +688,8 @@ h6 { font-size: 16px;}
   margin-left: 1rem;
   height:1.2rem;
   width: 82vw;
-  border-bottom: solid grey 1px;
+  /* border-bottom: solid grey 1px; */
+  border-bottom: solid #3e6da770 1px; 
    
 }
 
@@ -584,23 +711,32 @@ h6 { font-size: 16px;}
     left: 0;
     margin-left: 0rem;
     border-bottom: none;  
-    border-right: solid grey 1px; 
+    /* border-right: solid grey 1px;  */
+    border-right: solid #3e6da770 1px; 
+
   }
 }
 
-
+.navItem{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
 .navItem[active=false]{
   border-bottom: 2px solid transparent;
   /* ${props => props.active ? props.theme.lightGray : "transparent"}; */
-  color:grey;
-  cursor: pointer;
+  /* color:grey; */
+  color:aliceblue;
+
   transition: border-color 0.2s ease-in;
 }
 .navItem[active=true]{
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
+  border-bottom: 2px solid #DEFFF3;
+
   /* ${props => props.active ? props.theme.lightGray : "transparent"}; */
-  color:grey;
-  cursor: pointer;
+  /* color:grey; */
+  color:#5FBEDE;
+
   transition: border-color 0.2s ease-in;
 }
 .navItem h3{
@@ -627,7 +763,9 @@ h6 { font-size: 16px;}
     transform:scale(-1);
     /* padding-left: 3.5vmin; */
     border-bottom: none;
-    border-left: 2.2px solid black;
+    font-weight: 900;
+    /* border-left: 2.2px solid black; */
+    border-left: 2.2px solid #DEFFF3;
     /* ${props => props.active ? props.theme.lightGray : "transparent"}; */
   }
 

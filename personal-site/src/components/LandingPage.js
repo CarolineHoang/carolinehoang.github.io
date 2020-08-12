@@ -473,188 +473,346 @@ export default class LandingPage extends React.Component{
                 {/* <div className="nameHeadline">
                     Caroline Hoang
                 </div> */}
+                <div className= "landingImage"> 
+
                 
-                <section class="s1 landingImage" ref={this.props.sections[0].ref}>
-                    <div class="main-container">
-                        <div class="greeting-wrapper">
-                            <h1 className="nameHeadline">Caroline Hoang</h1>
-                            {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
-                        </div>
-                        {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
-                        <div ><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%'  allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p> */}
+                    <section className="s1 " ref={this.props.sections[0].ref}>
+                        <div class="main-container">
+                            <div class="greeting-wrapper">
+                                <h1 className="nameHeadline">Caroline Hoang</h1>
+                                {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
+                            </div>
+                            {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
+                            <div ><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%'  allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p> */}
 
 
-                        <div class="intro-wrapper">
-                            <div class="nav-wrapper">
+                            <div class="intro-wrapper">
+                                <div class="nav-wrapper">
 
-                                {/* <!-- Link around dots-wrapper added after tutorial video --> */}
-                                <a href="index.html">
-                                    <div class="dots-wrapper">
-                                        <div id="dot-1" class="browser-dot"></div>
-                                        <div id="dot-2" class="browser-dot"></div>
-                                        <div id="dot-3" class="browser-dot"></div>
+                                    {/* <!-- Link around dots-wrapper added after tutorial video --> */}
+                                    <a href="index.html">
+                                        <div class="dots-wrapper">
+                                            <div id="dot-1" class="browser-dot"></div>
+                                            <div id="dot-2" class="browser-dot"></div>
+                                            <div id="dot-3" class="browser-dot"></div>
+                                        </div>
+                                    </a>
+                                    
+
+                                    <ul id="navigation">
+                                        <li><a href="#contact1">Contact</a></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="left-column">
+                                    <img id="profile_pic" src="images/Dennis.jpg" />
+                                    <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
+
+                                    <div id="theme-options-wrapper">
+                                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                                     </div>
-                                </a>
+
+                                    <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p>
+                                </div>
+
+                                <div class="right-column">
+
+                                    <div id="preview-shadow">
+                                        <div id="preview">
+                                            <div id="corner-tl" class="corner"></div>
+                                            <div id="corner-tr" class="corner"></div>
+                                            <h3>What I Do</h3>
+                                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                                            <div id="corner-br" class="corner"></div>
+                                            <div id="corner-bl" class="corner"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="s2 " ref={this.props.sections[1].ref}>
+                        <div class="main-container">
+
+                            <div class="about-wrapper">
+                                <div class="about-me">
+                                    <h4>More about me</h4>
+
+                                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+
+                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+
+
+                                    <hr/>
+
+                                    <h4>TOP EXPERTISE</h4>
+
+                                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+                                    <div id="skills">
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Django</li>
+                                            <li>JavaScript</li>
+                                            <li>React</li>
+                                            <li>Postgres</li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>Google Maps API</li>
+                                            <li>JS Charts</li>
+                                            <li>AWS (RDS/S3)</li>
+                                            <li>Heroku</li>
+                                            <li>HTML/CSS</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
                                 
+                                <div class="social-links">
+                                    <img id="social_img" src="images/follow.jpg" />
+                                    <h3>Find me on Twitter & Youtube</h3>
 
-                                <ul id="navigation">
-                                    <li><a href="#contact1">Contact</a></li>
-
-                                </ul>
+                                    <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+                                    <br/>
+                                    <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+                                </div>
                             </div>
+                            <div class="about-wrapper">
+                                <div class="about-me">
+                                    <h4>More about me</h4>
 
-                            <div class="left-column">
-                                <img id="profile_pic" src="images/Dennis.jpg" />
-                                <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
+                                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-                                <div id="theme-options-wrapper">
-                                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+
+
+                                    <hr/>
                                 </div>
 
-                                <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p>
+                                
+                                <div class="social-links">
+                                    <img id="social_img" src="images/follow.jpg" />
+                                    <h3>Find me on Twitter & Youtube</h3>
+
+                                    <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+                                    <br/>
+                                    <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+                                </div>
                             </div>
 
-                            <div class="right-column">
+                        </div>
+                    </section>
+                </div> 
+                <div className= "landingImage-backwards">
+                    <section className="s1" ref={this.props.sections[2].ref}>
+                        <div class="main-container">
+                            <h3 style={{"text-align": "center"}} >Some of my past projects</h3>
 
-                                <div id="preview-shadow">
-                                    <div id="preview">
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
-                                        <h3>What I Do</h3>
-                                        <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
+                            <div class="post-wrapper">
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/dash.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Laboratory Management System</h6>
+                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="s2 landingImage" ref={this.props.sections[1].ref}>
-                    <div class="main-container">
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/ecom.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Online Store - CoursePost Title</h6>
+                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="about-wrapper">
-                            <div class="about-me">
-                                <h4>More about me</h4>
-
-                                <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
-                                <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
-
-
-                                <hr/>
-
-                                <h4>TOP EXPERTISE</h4>
-
-                                <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
-
-                                <div id="skills">
-                                    <ul>
-                                        <li>Python</li>
-                                        <li>Django</li>
-                                        <li>JavaScript</li>
-                                        <li>React</li>
-                                        <li>Postgres</li>
-                                    </ul>
-
-                                    <ul>
-                                        <li>Google Maps API</li>
-                                        <li>JS Charts</li>
-                                        <li>AWS (RDS/S3)</li>
-                                        <li>Heroku</li>
-                                        <li>HTML/CSS</li>
-                                    </ul>
-
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
+                            <div class="post-wrapper">
 
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/dash.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Laboratory Management System</h6>
+                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/ecom.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Online Store - CoursePost Title</h6>
+                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="post-wrapper">
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/dash.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Laboratory Management System</h6>
+                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/ecom.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Online Store - CoursePost Title</h6>
+                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Membership Website</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                             
-                            <div class="social-links">
-                                <img id="social_img" src="images/follow.jpg" />
-                                <h3>Find me on Twitter & Youtube</h3>
-
-                                <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
-                                <br/>
-                                <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
-                            </div>
                         </div>
+                    </section>
 
-                    </div>
-                </section>
+                    <section class="s2" ref={this.props.sections[3].ref}>
+                        <div class="main-container">
+                            <a href=""></a>
+                            <h3 style={{"text-align": "center"}} >Get In Touch</h3>
 
-                <section class="s1" ref={this.props.sections[2].ref}>
-                    <div class="main-container">
-                        <a name="projects"></a>
-                        <h3 style={{"text-align": "center"}} >Some of my past projects</h3>
+                            <form id="contact-form">
+                                <a name="contact1"></a>
 
-                        <div class="post-wrapper">
+                                <label>Name</label>
+                                <input class="input-field" type="text" name="name" />
 
-                            <div>
-                                <div class="post">
-                                    <img class="thumbnail" src="images/dash.jpg" />
-                                    <div class="post-preview">
-                                        <h6 class="post-title">Laboratory Management System</h6>
-                                        <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-                                        <a href="post.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <label>Subject</label>
+                                <input class="input-field" type="text" name="subject" />
 
-                            <div>
-                                <div class="post">
-                                    <img class="thumbnail" src="images/ecom.jpg" />
-                                    <div class="post-preview">
-                                        <h6 class="post-title">Online Store - CoursePost Title</h6>
-                                        <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
-                                        <a href="post.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <label>Email</label>
+                                <input class="input-field" type="text" name="email" />
 
-                            <div>
-                                <div class="post">
-                                    <img class="thumbnail" src="images/membership site.jpg" />
-                                    <div class="post-preview">
-                                        <h6 class="post-title">Membership Website</h6>
-                                        <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                        <a href="post.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <label>Message</label>
+                                <textarea class="input-field" name="message"></textarea>
 
+                                <input id="submit-btn" type="submit" value="Send" />
+                            </form>
                         </div>
-                    </div>
-                </section>
-
-                <section class="s2" ref={this.props.sections[3].ref}>
-                    <div class="main-container">
-                        <a href=""></a>
-                        <h3 style={{"text-align": "center"}} >Get In Touch</h3>
-
-                        <form id="contact-form">
-                            <a name="contact1"></a>
-
-                            <label>Name</label>
-                            <input class="input-field" type="text" name="name" />
-
-                            <label>Subject</label>
-                            <input class="input-field" type="text" name="subject" />
-
-                            <label>Email</label>
-                            <input class="input-field" type="text" name="email" />
-
-                            <label>Message</label>
-                            <textarea class="input-field" name="message"></textarea>
-
-                            <input id="submit-btn" type="submit" value="Send" />
-                        </form>
-                    </div>
-                </section> 
+                    </section> 
+                </div>
             </div>
         //
             // <FilterContainer>

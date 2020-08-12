@@ -103,8 +103,8 @@ export default class Navbar extends React.Component {
             // active={"false"}
             active={this.props.active === i ? "true" : "false"} 
             // active={this.props.active === i} 
-            onClick={()=>{this.props.navigateTo(i)}}>
-                <h3>{el.sectName}</h3>
+            onClick={()=>{this.props.navigateTo(i); console.log(i)}}>
+                {el.sectName}
             </div>
         ))
         // Because css only supports writing downwards and we want to write upwards, we
@@ -113,7 +113,7 @@ export default class Navbar extends React.Component {
             <div className = "navbarWrapper">
                 <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/>
                 {/* <Desktop> */}
-                    <div className = "itemContainer">
+                    <div className = "itemContainer navOptions">
                         {[...NavItems]}
                         {/* {[...NavItems].reverse()} */}
                     </div>
