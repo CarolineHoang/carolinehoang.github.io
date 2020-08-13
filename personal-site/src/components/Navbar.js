@@ -111,18 +111,26 @@ export default class Navbar extends React.Component {
         // are rotating the whole thing by 180deg and reversing the items
         return (
             <div className = "navbarWrapper">
-                <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/>
-                {/* <Desktop> */}
-                    <div className = "itemContainer navOptions">
-                        {[...NavItems]}
-                        {/* {[...NavItems].reverse()} */}
+                <div className = "navbarWrapperInner">
+                    {/* <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/> */}
+                    {/* <Desktop> */}
+                    <div className = "navbarWrapperInner2">
+                        <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/>
+                        {/* <div>asdf</div> */}
+                        <div className = "itemContainer navOptions">
+                        {/* <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/> */}
+                            {[...NavItems]}
+                            {/* {[...NavItems].reverse()} */}
+                        </div>
                     </div>
-                {/* </Desktop> */}
-                {/* <MobileAndTablet> */}
-                    {/* <div className = "itemContainer">
-                        {NavItems}
-                    </div> */}
-                {/* </MobileAndTablet> */}
+                        {/* <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/> */}
+                    {/* </Desktop> */}
+                    {/* <MobileAndTablet> */}
+                        {/* <div className = "itemContainer">
+                            {NavItems}
+                        </div> */}
+                    {/* </MobileAndTablet> */}
+                </div>
             </div>
         )
     }

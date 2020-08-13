@@ -3,6 +3,10 @@ import React from "react";
 // import { theme } from "../util/GlobalStyles";
 // import './App.css';
 
+import '../Styles/expandingCard.css'
+import '../Styles/social-media-slider-toggles.css'
+import '../Styles/navbar.css'
+import '../Styles/landingPage.css'
 
 //
             // let FilterContainer = styled.div`
@@ -273,189 +277,7 @@ import React from "react";
 
 
 export default class LandingPage extends React.Component{
-    // constructor(props){
-    //     super(props)
-    //     this.classDaysRef = React.createRef()
-    //     this.seniorProfRef = React.createRef()
-    //     this.seniorColRef = React.createRef()
-    //     this.handleScroll = this.handleScroll.bind(this)
-    //     this.navigateTo = this.navigateTo.bind(this)
-    //     this.prevScroll = 0
-    //     this.state = {
-    //       navActive: 0
-    //     }
-    //   }
-    
-    //   navigateTo(i){
-    //     switch(i) {
-    //       case 0: 
-    //         window.scrollTo({top: this.classDaysRef.current.offsetTop, behavior: 'smooth'})
-    //         break
-    //       case 1:
-    //         window.scrollTo({top: this.seniorProfRef.current.offsetTop, behavior: 'smooth'})
-    //         break
-    //       case 2:
-    //         window.scrollTo({top: this.seniorColRef.current.offsetTop, behavior: 'smooth'})
-    //         break
-    //       default:
-    //         break
-    //     }
-    //   }
-    
-    
-    
-    //   componentDidMount(){
-    //     console.log("hi")
-    //       window.addEventListener('scroll', this.handleScroll)
-    //   }
-    
-    //   componentWillUnmount(){
-    //       window.removeEventListener('scroll', this.handleScroll);
-    //   }
-    
-    //   handleScroll(e){
-    //     const top1 = this.classDaysRef.current.offsetTop
-    //     const top2 = this.seniorProfRef.current.offsetTop
-    //     const top3 = this.seniorColRef.current.offsetTop
-    //     const currScroll = window.scrollY
-    //     const winHeight = window.innerHeight
-    //     const adjustedScroll = currScroll + 0.4 * winHeight
-    
-    //     // let scrollingUp = this.prevScroll > window.scrollY
-    
-    //     if(adjustedScroll > top1 && adjustedScroll < top2){
-    //       this.setState({navActive: 0})
-    //     }
-    //     if(adjustedScroll > top2 && adjustedScroll < top3){
-    //       this.setState({navActive: 1})
-    //     }
-    //     if(adjustedScroll > top3){
-    //       this.setState({navActive: 2})
-    //     }
-    
-    //     this.prevScroll = currScroll
-    //   }
-//
-    // constructor(props) {
-	//     super(props);
-
-	//     this.state = {
-    //         // showSchool: false,
-    //         // showGroup: false,
-    //         // showRoom: false,
-    //         // Columbia: false,
-    //         // Barnard: false,
-    //         // GroupSize: 0,
-    //         // Suite: false,
-    //         // Single: false,
-    //         // Double: false,
-    //         // Triple: false
-	//     };
-    //     // this.onChange = this.onChange.bind(this);
-    //     // this.toggle= this.toggle.bind(this);
-    //     // this.clear= this.clear.bind(this);
-    //     // this.unCheck= this.unCheck.bind(this);
-    // }
-//
-    // onChange(e) {
-    //     let target = e.target.id;
-
-    //     if(target === "+") {
-    //         this.setState({
-    //             GroupSize:  ((this.state.GroupSize + 1) <= this.props.MAX_GROUP ) ? this.state.GroupSize + 1 : this.props.MAX_GROUP
-    //         }, () => this.props.submit("", "", this.createPayload()))
-    //     } else if(target === "-") {
-    //         this.setState({
-    //             GroupSize: ((this.state.GroupSize - 1) >= 0 ) ? this.state.GroupSize - 1 : 0
-    //         }, () => this.props.submit("", "", this.createPayload()))
-    //     } else if(String(target).startsWith("GroupSize")) {
-    //         this.setState({
-    //             GroupSize: 0
-    //         }, () => this.props.submit("", "", this.createPayload()))
-    //     } else { 
-    //         this.setState({
-    //             [target]: !this.state[target]
-    //         }, () => this.props.submit("", "", this.createPayload()))
-    //     }    
-    // }
-    
-    // toggle(action,e) {
-    //     // let action = e.target.id
-    //     // console.log("action:" , action)
-    //     if(action === "school") {
-    //         this.setState({
-    //             showSchool: !this.state.showSchool,
-    //             showRoom: false,
-    //             showGroup: false
-    //         })
-    //     }
-    //     else if(action === "room") {
-    //         this.setState({
-    //             showRoom: !this.state.showRoom,
-    //             showGroup: false,
-    //             showSchool: false
-    //         })
-    //     }
-    //     else if(action === "group") {
-    //         this.setState({
-    //             showGroup: !this.state.showGroup,
-    //             showRoom: false,
-    //             showSchool: false
-    //         })
-    //     }
-    //     else{
-    //         this.setState({
-    //             showGroup: false,
-    //             showRoom: false,
-    //             showSchool: false
-    //         })
-    //     }
-    // }
-
-    // unCheck(value, e){
-    //     let action = value;
-    //     this.setState({
-    //         [action]: !this.state[action]
-    //     }, () => this.props.submit("", "", this.createPayload()))
-    // }
-
-    // createPayload() {
-    //     let payload = {
-    //         COLUMBIA: this.state.Columbia,
-    //         BARNARD: this.state.Barnard,
-    //         SINGLE_: this.state.Single,
-    //         DOUBLE_: this.state.Double,
-    //         TRIPLE_: this.state.Triple,
-    //         SUITE_: this.state.Suite,
-    //         GROUP_SIZE_1: this.state.GroupSize == 1,
-    //         GROUP_SIZE_2: this.state.GroupSize == 2,
-    //         GROUP_SIZE_3: this.state.GroupSize == 3,
-    //         GROUP_SIZE_4: this.state.GroupSize == 4,
-    //         GROUP_SIZE_5: this.state.GroupSize == 5,
-    //         GROUP_SIZE_6: this.state.GroupSize == 6,
-    //         GROUP_SIZE_7: this.state.GroupSize == 7,
-    //         GROUP_SIZE_8: this.state.GroupSize == 8,
-    //         GROUP_SIZE_9: this.state.GroupSize == 9,
-    //         DORM: this.props.search
-    //     }
-    //     return payload;
-    // }
-
-    // clear() {
-    //     this.setState({
-    //         showSchool: false,
-    //         showGroup: false,
-    //         showRoom: false,
-    //         Columbia: false,
-    //         Barnard: false,
-    //         GroupSize: 0,
-    //         Suite: false,
-    //         Single: false,
-    //         Double: false,
-    //         Triple: false
-    //     }, () => this.props.submit("", "", this.createPayload()))
-    // }
-//
+  
     render() {
         //
             // var selectedFilters = [];
@@ -488,8 +310,12 @@ export default class LandingPage extends React.Component{
                             {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
                             <div ><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%'  allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p> */}
 
+                        </div>
+                    </section>
 
-                            <div class="intro-wrapper">
+                    <section className="s2 " ref={this.props.sections[1].ref}>
+                        <div class="main-container panelShade">
+                        <div class="intro-wrapper">
                                 <div class="nav-wrapper">
 
                                     {/* <!-- Link around dots-wrapper added after tutorial video --> */}
@@ -536,12 +362,6 @@ export default class LandingPage extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-
-                    <section className="s2 " ref={this.props.sections[1].ref}>
-                        <div class="main-container panelShade">
-
                             <div class="about-wrapper">
                                 <div class="about-me">
                                     <h4>More about me</h4>
@@ -599,23 +419,11 @@ export default class LandingPage extends React.Component{
 
                             <div class="post-wrapper">
 
-                                <div      >
-                                    <div class="post">
-                                        {/* <img class="thumbnail" src="images/dash.jpg" /> */}
-                                        {/* <iframe src="https://www.columbiaspectator.com/" class="thumbnail"></iframe> */}
-                                        {/* <object  type="text/html" data="https://www.sitepoint.com/community/t/embed-a-webpage-within-another-webpage/230037/4"></object> */}
-                                        <img class="thumbnail" src="images/dash.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">ScoreIT</h6>
-                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <div>
                                     <div class="post">
-                                        <img class="thumbnail" src="images/ecom.jpg" />
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">Spectator Site</h6>
                                             <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
@@ -623,10 +431,37 @@ export default class LandingPage extends React.Component{
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">Awesome Headline</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">Awesome Headline</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true"/>
+                                    </div>
+                                </div>
 
                                 <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">Awesome Headline</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true"/>
+                                    </div>
+                                </div>
+                                <div>
                                     <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">The Shaft</h6>
                                             <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
@@ -636,7 +471,30 @@ export default class LandingPage extends React.Component{
                                 </div>
                                 <div>
                                     <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">Looper</h6>
+                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        {/* <img class="thumbnail" src="images/dash.jpg" /> */}
+                                        {/* <iframe src="https://www.columbiaspectator.com/" class="thumbnail"></iframe> */}
+                                        {/* <object  type="text/html" data="https://www.sitepoint.com/community/t/embed-a-webpage-within-another-webpage/230037/4"></object> */}
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true" />
+                                        <div class="post-preview">
+                                            <h6 class="post-title">ScoreIT</h6>
+                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                                            <a href="post.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="post">
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">Vocaloid Site</h6>
                                             <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
@@ -647,17 +505,7 @@ export default class LandingPage extends React.Component{
                                 {/* <div></div> */}
                                 <div>
                                     <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Looper</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="images/membership site.jpg" />
+                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">RPG</h6>
                                             <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
@@ -665,9 +513,19 @@ export default class LandingPage extends React.Component{
                                         </div>
                                     </div>
                                 </div>
+                                {/* <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">Awesome Headline</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
+                                        <div class="card_circle transition"></div>
+                                    </div>
+                                </div> */}
                                 {/* <div></div> */}
+                               
 
                             </div>
+                            
                         </div>
                     </section>
 
