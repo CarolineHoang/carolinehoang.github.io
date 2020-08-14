@@ -274,6 +274,22 @@ import '../Styles/landingPage.css'
 
 
 
+const projectsJSON = {
+    Spectator: {title: 'Daily Spectator', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: '<b>Aenean</b> lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
+    theShaft: {title: 'theShaft', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
+    Loopy: {title: 'Loopy', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
+    ScoreIT: {title: 'ScoreIT', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
+    VocaSearchP: {title: 'VocaSearchP', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
+    RPG: {title: 'RPG Site', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' }
+
+
+
+}
+// if you want to use html tags in the text, do this:
+// https://www.npmjs.com/package/react-html-parser
+// or dangerouslySetHTML
+
+
 
 
 export default class LandingPage extends React.Component{
@@ -346,7 +362,7 @@ export default class LandingPage extends React.Component{
                                     </div>
 
                                     <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p> */}
-                                
+{/*                                 
                                 <div class="previewContainer" >
                                         <div className="preview">
                                             <div id="corner-tl" class="corner"></div>
@@ -356,7 +372,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-br" class="corner"></div>
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
-                                </div>
+                                </div> */}
                                 
                                 </div>
 
@@ -368,12 +384,12 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-tl" class="corner"></div>
                                             <div id="corner-tr" class="corner"></div>
                                             <h3>Who am I?</h3>
-                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
+                                            <p>I'm a rising Junior based in NY and studying Computer Science at Columbia University.</p>
                                             <div id="corner-br" class="corner"></div>
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
                                     </div>
-                                    <div class="previewContainer" >
+                                    {/* <div class="previewContainer" >
                                         <div className="preview">
                                             <div id="corner-tl" class="corner"></div>
                                             <div id="corner-tr" class="corner"></div>
@@ -382,7 +398,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-br" class="corner"></div>
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className ="about-wrapper">
@@ -415,7 +431,7 @@ export default class LandingPage extends React.Component{
                                         <div id="corner-bl" class="corner"></div>
                                     </div>
                                 </div>
-                                <div class="previewContainer" >
+                                {/* <div class="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" class="corner"></div>
                                         <div id="corner-tr" class="corner"></div>
@@ -444,7 +460,7 @@ export default class LandingPage extends React.Component{
                                         <div id="corner-br" class="corner"></div>
                                         <div id="corner-bl" class="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* </div> */}
                                 {/* <div className= "preview-shadow resumeWrapper">
                                     <div id="preview" >
@@ -491,7 +507,7 @@ export default class LandingPage extends React.Component{
                                 {/* </div> */}
 
                                 {/* <div className= "preview-shadow findMeWrapper"> */}
-                                <div class="previewContainer" >
+                                {/* <div class="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" class="corner"></div>
                                         <div id="corner-tr" class="corner"></div>
@@ -505,7 +521,7 @@ export default class LandingPage extends React.Component{
                                         <div id="corner-br" class="corner"></div>
                                         <div id="corner-bl" class="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
                               
                             </div>
 
@@ -532,123 +548,73 @@ export default class LandingPage extends React.Component{
                                 </div> */}
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">Spectator Site</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.Spectator.title}</h2>
+                                        <p>{projectsJSON.Spectator.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
                                         <div class="card_circle transition">
-                                            <img class="card-img" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true"/>
+                                            <img class="card-img" src={projectsJSON.Spectator.image}/>
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">theShaft</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.theShaft.title}</h2>
+                                        <p>{projectsJSON.theShaft.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true"/>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src={projectsJSON.theShaft.image}/>
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">Loopy</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.Loopy.title}</h2>
+                                        <p>{projectsJSON.Loopy.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true"/>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src={projectsJSON.Loopy.image}/>
+                                        </div>
                                     </div>
                                 </div>
-                                {/* <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">The Shaft</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div> */}
-                                {/* <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Looper</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div> */}
-
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">ScoreIT</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.ScoreIT.title}</h2>
+                                        <p>{projectsJSON.ScoreIT.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true"/>
-                                    </div>
-                                </div>
-                                {/* <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">ScoreIT</h6>
-                                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
-                                            <a href="post.html">Read More</a>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src={projectsJSON.ScoreIT.image}/>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">VocaSearchP</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.VocaSearchP.title}</h2>
+                                        <p>{projectsJSON.VocaSearchP.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true"/>
-                                    </div>
-                                </div>
-                                {/* <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Vocaloid Site</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src={projectsJSON.VocaSearchP.image}/>
                                         </div>
                                     </div>
-                                </div> */}
-                                {/* <div></div> */}
+                                </div>
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">RPG Site</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        <h2 class="transition">{projectsJSON.RPG.title}</h2>
+                                        <p>{projectsJSON.RPG.text}</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true"/>
-                                    </div>
-                                </div>
-                                {/* <div>
-                                    <div class="post">
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">RPG</h6>
-                                            <p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-                                            <a href="post.html">Read More</a>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src={projectsJSON.RPG.image}/>
                                         </div>
                                     </div>
-                                </div> */}
-                                {/* <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">Awesome Headline</h2>
-                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                        <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
-                                        <div class="card_circle transition"></div>
-                                    </div>
-                                </div> */}
-                                {/* <div></div> */}
+                                </div>
+                 
+                                
                                
 
                             </div>
@@ -684,10 +650,10 @@ export default class LandingPage extends React.Component{
                     <section class="footer">
                         
                             <a href=""></a>
-                            Copyright Caroline Hoang . Resume . Contaact Me
+                            © 2018-2020 Caroline Hoang • NY • Resume • Contact Me
                             {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
 
-                            <div class="previewContainer" >
+                            {/* <div class="previewContainer" >
                                         <div className="preview">
                                             <div id="corner-tl" class="corner"></div>
                                             <div id="corner-tr" class="corner"></div>
@@ -696,7 +662,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-br" class="corner"></div>
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
-                                </div>
+                                </div> */}
                     </section> 
                 </div>
                 <div class="float-sm">
