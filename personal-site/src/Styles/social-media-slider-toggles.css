@@ -25,7 +25,10 @@
     /* background-color: transparent */
   }
   
-  .fa {
+  /* .fa {
+
+  } */
+  .float-icon-font{
     font-size: 20px;
     color: #fff;
     padding: 10px 0;
@@ -37,7 +40,6 @@
     /* background: rgb(59, 2, 6); */
     /* mix-blend-mode: multiply; */
   }
-  
   .fl-fl:hover {
     right: 0;
     border-top: 1px solid white; 
@@ -51,6 +53,8 @@
     text-align: center;
     line-height: 43px!important;
     vertical-align: top!important;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .float-fb {

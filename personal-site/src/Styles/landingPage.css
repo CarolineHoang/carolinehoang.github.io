@@ -39,7 +39,7 @@
   
   h1, h2, h3, h4, h5, h6, strong{
       color: var(--mainText);
-      /* font-family: 'Russo One', sans-serif; */
+      /* font-.previewmily: 'Russo One', sans-serif; */
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
   }
@@ -52,6 +52,7 @@
   a{
       text-decoration: none;
       color:#17a2b8;
+      /* color:#24d5f0; */
   }
   
   ul{
@@ -64,6 +65,9 @@
   h4 { font-size: 24px;}
   h5 { font-size: 20px;}
   h6 { font-size: 16px;}
+  p{
+    font-size: 1.2rem
+  }
   
   
   header{
@@ -468,6 +472,9 @@
       margin-top: 30px;
       /* font-family: 'Montserrat', sans-serif; */
   }
+  .preview a{
+    font-size: 1.2rem;
+  }
   .previewContainer::before{
     content: ' ';
     position: absolute;
@@ -770,6 +777,33 @@
     color: rgb(192, 42, 42);
     mix-blend-mode: difference;
   }
+
+  .emailHeadline{
+    font-family: 'Montserrat', sans-serif;
+    /* color: aliceblue; */
+    /* margin-bottom:0; */
+    /* color: rgb(192, 42, 42); */
+    /* color: rgb(47, 192, 42); */
+    color: rgb(42, 110, 192);
+    /* color: rgb(192, 125, 42); */
+
+
+    mix-blend-mode: difference;
+    font-size: 5vw;
+
+    font-weight: 700;
+  }
+
+  .emailIcon{
+      font-size: 15vw;
+      color: aliceblue;
+      margin: 5vw;
+      margin-bottom: 0;
+
+  }
+  .contactMeContainer{
+    /* margin-bottom: 10vh; */
+  }
   
   
   .subHeadline{
@@ -780,6 +814,14 @@
   }
 
 
+
+/* 
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin: 0px 8px;
+ */
 
 
 
