@@ -275,12 +275,12 @@ import '../Styles/landingPage.css'
 
 
 const projectsJSON = {
-    Spectator: {title: 'Daily Spectator', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: '<b>Aenean</b> lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
-    theShaft: {title: 'theShaft', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
-    Loopy: {title: 'Loopy', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
-    ScoreIT: {title: 'ScoreIT', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
-    VocaSearchP: {title: 'VocaSearchP', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' },
-    RPG: {title: 'RPG Site', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true", text: 'Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.' }
+    Spectator: {title: 'Daily Spectator', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: 'A news site that delivers Columbia and Morningside related news and shares articles written by students for students' },
+    theShaft: {title: 'theShaft', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'A website that informs Columbia Students of how the Housing Lottery opperates and organizes information about the dorms' },
+    Loopy: {title: 'Loopy', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'A site that allows the user to import sounds to use in a looping sequencer (CodeLabs Project)' },
+    ScoreIT: {title: 'ScoreIT', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true", text: 'A site that teaches introductory music students about how to distinguish between different values of notes (UI Design Final Project)' },
+    VocaSearchP: {title: 'VocaSearchP', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true", text: 'A site for Vocaloid enthusists and those new to Vocaloid music to find new producers to follow based on the voicebanks they are familar with (UI Design Midterm Project)' },
+    RPG: {title: 'RPG Site', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true", text: 'A concept site for being able to manuver a website using an RPG character and arrow controls along side traditional clicking navigation' }
 
 
 
@@ -557,6 +557,14 @@ export default class LandingPage extends React.Component{
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.Spectator.image}/>
                                         </div>
+                                        <div class="optionsContainer">
+                                            {/* <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>  */}
+                                            <div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div>
+                                            <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div>
+                                            
+                                            {/* <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div>
+                                            <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div> */}
+                                        </div>
                                         
                                     </div>
                                 </div>
@@ -683,6 +691,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
                                 </div> */}
+                                <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a> 
                     </section> 
                 </div>
                 <div class="float-sm">
