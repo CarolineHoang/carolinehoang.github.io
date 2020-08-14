@@ -373,7 +373,7 @@
       /* height: 200px;
     width: 200px; */
     /* height: 30vw; */
-    width: 30vw;
+    width: 70%;
     /* background-size:  auto auto; */
     /* object-fit: cover; */
     /* filter: blur(8px); */
@@ -381,6 +381,8 @@
     opacity: .86;
       border:2px solid var(--borderColor);
   }
+
+  
   
   
   #theme-options-wrapper{
