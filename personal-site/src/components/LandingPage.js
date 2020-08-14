@@ -275,12 +275,12 @@ import '../Styles/landingPage.css'
 
 
 const projectsJSON = {
-    Spectator: {title: 'Daily Spectator', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: 'A news site that delivers Columbia and Morningside related news and shares articles written by students for students' },
-    theShaft: {title: 'theShaft', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'A website that informs Columbia Students of how the Housing Lottery opperates and organizes information about the dorms' },
-    Loopy: {title: 'Loopy', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'A site that allows the user to import sounds to use in a looping sequencer (CodeLabs Project)' },
-    ScoreIT: {title: 'ScoreIT', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true", text: 'A site that teaches introductory music students about how to distinguish between different values of notes (UI Design Final Project)' },
-    VocaSearchP: {title: 'VocaSearchP', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true", text: 'A site for Vocaloid enthusists and those new to Vocaloid music to find new producers to follow based on the voicebanks they are familar with (UI Design Midterm Project)' },
-    RPG: {title: 'RPG Site', image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true", text: 'A concept site for being able to manuver a website using an RPG character and arrow controls along side traditional clicking navigation' }
+    Spectator: {title: 'Daily Spectator', links: ['https://www.columbiaspectator.com/'], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: 'A news site that delivers Columbia and Morningside related news and shares articles written by students for students' },
+    theShaft: {title: 'theShaft', links: ['https://www.theshaft.info/explore'] ,image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'A website that informs Columbia Students of how the Housing Lottery opperates and organizes information about the dorms' },
+    Loopy: {title: 'Loopy', links: [], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'A site that allows the user to import sounds to use in a looping sequencer (CodeLabs Project)' },
+    ScoreIT: {title: 'ScoreIT', links: ['https://github.com/CarolineHoang/ScoreIT'], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true", text: 'A site that teaches introductory music students about how to distinguish between different values of notes (UI Design Project)' },
+    VocaSearchP: {title: 'VocaSearchP', links: ['https://github.com/CarolineHoang/vocAdventures'], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true", text: 'A site for Vocaloid enthusists and newbies to discover new producers to follow based on their favorite voicebanks (UI Design Project)' },
+    RPG: {title: 'RPG Site', links: ['https://github.com/CarolineHoang/platformerJS', 'https://github.com/CarolineHoang/react-platformer'], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true", text: 'A concept site for being able to manuver a website using an RPG character and arrow controls along side traditional clicking navigation' }
 
 
 
@@ -319,7 +319,7 @@ export default class LandingPage extends React.Component{
                             <div class="greeting-wrapper">
                                 <h1 className="nameHeadline">Caroline Hoang</h1>
                                 {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
-                                <h3 className="subHeadline" >CS Student, Developer, Something</h3>
+                                <h3 className="subHeadline" >CS Student, Developer, Tech Enthusiast</h3>
 
                                 {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
                             </div>
@@ -336,13 +336,13 @@ export default class LandingPage extends React.Component{
                                 <div class="nav-wrapper">
 
                                     {/* <!-- Link around dots-wrapper added after tutorial video --> */}
-                                    <a href="index.html">
+                                    {/* <a href="index.html"> */}
                                         <div class="dots-wrapper">
                                             <div id="dot-1" class="browser-dot"></div>
                                             <div id="dot-2" class="browser-dot"></div>
                                             <div id="dot-3" class="browser-dot"></div>
                                         </div>
-                                    </a>
+                                    {/* </a> */}
                                     
 
                                     <ul id="navigation">
@@ -559,8 +559,8 @@ export default class LandingPage extends React.Component{
                                         </div>
                                         <div class="optionsContainer">
                                             {/* <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>  */}
-                                            <div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div>
-                                            <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div>
+                                            {/* <div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div> */}
+                                            <a href={projectsJSON.Spectator.links[0]}><div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div></a>
                                             
                                             {/* <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div>
                                             <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div> */}
@@ -577,6 +577,9 @@ export default class LandingPage extends React.Component{
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.theShaft.image}/>
                                         </div>
+                                        <div class="optionsContainer">
+                                            <a href={projectsJSON.theShaft.links[0]}><div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -587,6 +590,10 @@ export default class LandingPage extends React.Component{
                                         {/* <div class="card_circle transition"></div> */}
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.Loopy.image}/>
+                                        </div>
+                                        <div class="optionsContainer">
+                                            <div>~ Links TBA ~</div>
+                                            {/* Links Not Available */}
                                         </div>
                                     </div>
                                 </div>
@@ -599,6 +606,10 @@ export default class LandingPage extends React.Component{
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.ScoreIT.image}/>
                                         </div>
+                                        <div class="optionsContainer">
+                                            <a href={projectsJSON.ScoreIT.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -610,6 +621,10 @@ export default class LandingPage extends React.Component{
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.VocaSearchP.image}/>
                                         </div>
+                                        <div class="optionsContainer">
+                                            <a href={projectsJSON.VocaSearchP.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -620,6 +635,10 @@ export default class LandingPage extends React.Component{
                                         {/* <div class="card_circle transition"></div> */}
                                         <div class="card_circle transition">
                                             <img class="card-img" src={projectsJSON.RPG.image}/>
+                                        </div>
+                                        <div class="optionsContainer">
+                                            <a href={projectsJSON.RPG.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -691,7 +710,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-bl" class="corner"></div>
                                         </div>
                                 </div> */}
-                                <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a> 
+                                {/* <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>  */}
                     </section> 
                 </div>
                 <div class="float-sm">

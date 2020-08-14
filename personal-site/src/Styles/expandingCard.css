@@ -172,7 +172,7 @@ p {
   text-align: center;
   z-index: 9999;
 }
-.card:hover p { margin-top: 240px }
+.card:hover p { margin-top: 230px }
 .cta-container {
     display: none;
     margin-top: 320px;
@@ -250,6 +250,7 @@ p {
     /* background-color: red; */
     overflow: hidden;
     border-top: 10px rgb(245, 245, 245) solid;
+    color: rgba(0,0,0,.6);
     /* border: 10px rgb(245, 245, 245) solid; */
 
 }
