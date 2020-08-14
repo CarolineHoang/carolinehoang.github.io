@@ -1,3 +1,17 @@
+/* 
+    This navbar is adapted and improved from the navbar I built for Columbia Daily Spectator's 2019 Commencement Article
+    This version handles mobile and desktop views from just the css without the additional MobileAndTablet import. 
+    It also does not require the reversal of the nav items.
+    The original version of this code used style components, but I have separated out the css into a css style sheet 
+*/
+
+.navOptions{
+  font-family: 'Montserrat', sans-serif;
+  /* font-stretch: expanded; */
+  /* font-stretch: condensed; */
+  
+}
+
 
 .navbarWrapper{
     

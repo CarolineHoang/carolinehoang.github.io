@@ -1,4 +1,9 @@
-/* this is based on code from Knol's 'Material Card with Animated Featured Image' CodePen pen */
+/*  this code is based and adapted from from Knol's 'Material Card with Animated Featured Image' CodePen pen 
+    The original version can be found here: https://codepen.io/knolaust/pen/bNvZRQ
+    One thing to note is that in my version card-circle does not have the image. Instead, it is a div that contains the image inside of it, hiding the excess.
+    In addition, it's no longer a circle but a rectangle with two rounded bottom corners. 
+*/
+
 
 
 
@@ -38,11 +43,13 @@
     /* right: 0;
     top: 0; */
     width: 100%;
+
+    opacity: .9;
     /* width: 300px; */
 }
-/* .card:hover {
-  height: 400px;
-} */
+.card:hover {
+  opacity: 1;
+}
 /* .buffer{
     height: 400px; 
     background-color: red;

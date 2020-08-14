@@ -1,3 +1,9 @@
+// Base HTML for the 'web browser' panel, shadowed boxes with dots and the project grid 
+// was inspired by divanov11 and adapted by me @CarolineHoang                              
+// The original project can be found here: https://github.com/divanov11/portfolio-website
+// Note: the original was in pure javascript and HTML. This website is built with React
+
+
 import React from "react";
 // import styled from 'styled-components';
 // import { theme } from "../util/GlobalStyles";
@@ -315,8 +321,8 @@ export default class LandingPage extends React.Component{
 
                 
                     <section className="s1 " ref={this.props.sections[0].ref}>\
-                        <div class="main-container">
-                            <div class="greeting-wrapper">
+                        <div className="main-container">
+                            <div className="greeting-wrapper">
                                 <h1 className="nameHeadline">Caroline Hoang</h1>
                                 {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
                                 <h3 className="subHeadline" >CS Student, Developer, Tech Enthusiast</h3>
@@ -331,16 +337,16 @@ export default class LandingPage extends React.Component{
 
                     <section className="s2 " ref={this.props.sections[1].ref}>
                         <a name='aboutMe'></a>
-                        <div class="main-container panelShade">
-                        <div class="intro-wrapper">
-                                <div class="nav-wrapper">
+                        <div className="main-container panelShade">
+                        <div className="intro-wrapper">
+                                <div className="nav-wrapper">
 
                                     {/* <!-- Link around dots-wrapper added after tutorial video --> */}
                                     {/* <a href="index.html"> */}
-                                        <div class="dots-wrapper">
-                                            <div id="dot-1" class="browser-dot"></div>
-                                            <div id="dot-2" class="browser-dot"></div>
-                                            <div id="dot-3" class="browser-dot"></div>
+                                        <div className="dots-wrapper">
+                                            <div id="dot-1" className="browser-dot"></div>
+                                            <div id="dot-2" className="browser-dot"></div>
+                                            <div id="dot-3" className="browser-dot"></div>
                                         </div>
                                     {/* </a> */}
                                     
@@ -351,76 +357,47 @@ export default class LandingPage extends React.Component{
                                     </ul>
                                 </div>
                                 {/* <a name='aboutMe'></a> */}
-                                <div class="left-column">
+                                <div className="left-column">
                                     <img id="profile_pic" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/profile-image.jpg?raw=true" />
-                                    {/* <h5 style={{"text-align": 'center', "line-height": '0'}}>Personalize Theme</h5>
-
-                                    <div id="theme-options-wrapper">
-                                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-                                    </div>
-
-                                    <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p> */}
-{/*                                 
-                                <div class="previewContainer" >
-                                        <div className="preview">
-                                            <div id="corner-tl" class="corner"></div>
-                                            <div id="corner-tr" class="corner"></div>
-                                            <h3>Who am I?</h3>
-                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
-                                            <div id="corner-br" class="corner"></div>
-                                            <div id="corner-bl" class="corner"></div>
-                                        </div>
-                                </div> */}
+                            
                                 
                                 </div>
                                 {/* <a name='aboutMe'></a> */}
-                                <div class="right-column">
+                                <div className="right-column">
 
                                     {/* <div className ="preview-shadow"> */}
-                                    <div class="previewContainer" >
+                                    <div className="previewContainer" >
                                         <div className="preview">
-                                            <div id="corner-tl" class="corner"></div>
-                                            <div id="corner-tr" class="corner"></div>
+                                            <div id="corner-tl" className="corner"></div>
+                                            <div id="corner-tr" className="corner"></div>
                                             <h3>Who am I?</h3>
                                             <p>I'm a rising Junior based in NY and studying Computer Science at Columbia University.</p>
-                                            <div id="corner-br" class="corner"></div>
-                                            <div id="corner-bl" class="corner"></div>
+                                            <div id="corner-br" className="corner"></div>
+                                            <div id="corner-bl" className="corner"></div>
                                         </div>
                                     </div>
-                                    {/* <div class="previewContainer" >
-                                        <div className="preview">
-                                            <div id="corner-tl" class="corner"></div>
-                                            <div id="corner-tr" class="corner"></div>
-                                            <h3>Who am I?</h3>
-                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
-                                            <div id="corner-br" class="corner"></div>
-                                            <div id="corner-bl" class="corner"></div>
-                                        </div>
-                                    </div> */}
+                                   
                                 </div>
                             </div>
                             <div className ="about-wrapper">
                             {/* <div className ="left-column"> */}
-                                {/* <div class="about-me"> */}
+                                {/* <div className="about-me"> */}
                                 {/* <div className= "preview-shadow resumeWrapper"> */}
-                                <div class="previewContainer" >
+                                <div className="previewContainer" >
                                     <div className="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
+                                        <div id="corner-tl" className="corner"></div>
+                                        <div id="corner-tr" className="corner"></div>
                                         <h3>Looking for my Resume?</h3>
                                         <p>You can find it <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">Here</a>.</p>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
+                                        <div id="corner-br" className="corner"></div>
+                                        <div id="corner-bl" className="corner"></div>
                                     </div>
                                 </div>
 
-                                <div class="previewContainer" >
+                                <div className="previewContainer" >
                                     <div className="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
+                                        <div id="corner-tl" className="corner"></div>
+                                        <div id="corner-tr" className="corner"></div>
                                         <h3>You can also find me on:</h3>
 
                                         <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
@@ -428,102 +405,11 @@ export default class LandingPage extends React.Component{
                                         <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
                                         <br/>
                                         <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
+                                        <div id="corner-br" className="corner"></div>
+                                        <div id="corner-bl" className="corner"></div>
                                     </div>
                                 </div>
-                                {/* <div class="previewContainer" >
-                                    <div className="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
-                                        <h3>You can also find me on:</h3>
-
-                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
-                                    </div>
-                                </div>
-                                <div class="previewContainer" >
-                                    <div className="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
-                                        <h3>You can also find me on:</h3>
-
-                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
-                                    </div>
-                                </div> */}
-                                {/* </div> */}
-                                {/* <div className= "preview-shadow resumeWrapper">
-                                    <div id="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
-                                        <h3>Looking for my Resume?</h3>
-                                        <p>You can find it here.</p>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
-                                    </div>
-                                </div> */}
-                                    {/* <h4>More about me</h4>
-
-                                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
-                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p> */}
-
-
-                                    {/* <hr/> */}
-
-                                    {/* <h4>TOP EXPERTISE</h4>
-
-                                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p> */}
-
-                                    {/* <div id="skills">
-                                        <ul>
-                                            <li>Python</li>
-                                            <li>Django</li>
-                                            <li>JavaScript</li>
-                                            <li>React</li>
-                                            <li>Postgres</li>
-                                        </ul>
-
-                                        <ul>
-                                            <li>Google Maps API</li>
-                                            <li>JS Charts</li>
-                                            <li>AWS (RDS/S3)</li>
-                                            <li>Heroku</li>
-                                            <li>HTML/CSS</li>
-                                        </ul>
-
-                                    </div> */}
-
-                                {/* </div> */}
-
-                                {/* <div className= "preview-shadow findMeWrapper"> */}
-                                {/* <div class="previewContainer" >
-                                    <div className="preview" >
-                                        <div id="corner-tl" class="corner"></div>
-                                        <div id="corner-tr" class="corner"></div>
-                                        <h3>You can also find me on:</h3>
-
-                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
-                                        <br/>
-                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
-                                        <div id="corner-br" class="corner"></div>
-                                        <div id="corner-bl" class="corner"></div>
-                                    </div>
-                                </div> */}
-                              
+                                
                             </div>
 
                         </div>
@@ -531,114 +417,104 @@ export default class LandingPage extends React.Component{
                 </div> 
                 <div className= "landingImage-backwards">
                     <section className="s1" ref={this.props.sections[2].ref}>
-                        <div class="main-container">
+                        <div className="main-container">
                             <a name='projects'></a>
                             <h3 className='categoryTitle' >Some of my Projects</h3>
 
-                            <div class="post-wrapper">
+                            <div className="post-wrapper">
 
-                                
-
-                                {/* <div>
-                                        <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" />
-                                        <div class="post-preview">
-                                            <h6 class="post-title">Spectator Site</h6>
-                                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping</p>
-                                            <a href="post.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div> */}
+                            
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.Spectator.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.Spectator.title}</h2>
                                         <p>{projectsJSON.Spectator.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.Spectator.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.Spectator.image}/>
                                         </div>
-                                        <div class="optionsContainer">
-                                            {/* <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>  */}
-                                            {/* <div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div> */}
-                                            <a href={projectsJSON.Spectator.links[0]}><div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div></a>
+                                        <div className="optionsContainer">
+                                            {/* <a href="https://twitter.com/Dave_Conner" className="btn btn-4"><span>Hover</span></a>  */}
+                                            {/* <div className="cardButton"><i className="card-icon-font fab fa-github-alt"></i> See on GitHub </div> */}
+                                            <a href={projectsJSON.Spectator.links[0]}><div className="cardButton"><i className="card-icon-font fas fa-link"></i> See Live </div></a>
                                             
-                                            {/* <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div>
-                                            <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div> */}
+                                            {/* <div className="mediaIcon"><i className="float-icon-font fa fa-github"></i></div>
+                                            <div className="mediaIcon"><i className="float-icon-font fa fa-github"></i></div> */}
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.theShaft.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.theShaft.title}</h2>
                                         <p>{projectsJSON.theShaft.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.theShaft.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.theShaft.image}/>
                                         </div>
-                                        <div class="optionsContainer">
-                                            <a href={projectsJSON.theShaft.links[0]}><div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div></a>
+                                        <div className="optionsContainer">
+                                            <a href={projectsJSON.theShaft.links[0]}><div className="cardButton"><i className="card-icon-font fas fa-link"></i> See Live </div></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.Loopy.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.Loopy.title}</h2>
                                         <p>{projectsJSON.Loopy.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.Loopy.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.Loopy.image}/>
                                         </div>
-                                        <div class="optionsContainer">
+                                        <div className="optionsContainer">
                                             <div>~ Links TBA ~</div>
                                             {/* Links Not Available */}
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.ScoreIT.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.ScoreIT.title}</h2>
                                         <p>{projectsJSON.ScoreIT.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.ScoreIT.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.ScoreIT.image}/>
                                         </div>
-                                        <div class="optionsContainer">
-                                            <a href={projectsJSON.ScoreIT.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
-                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
+                                        <div className="optionsContainer">
+                                            <a href={projectsJSON.ScoreIT.links[0]}><div className="cardButton"><i className="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div className="cardButton"><i className="card-icon-font fas fa-link"></i> See Live </div> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.VocaSearchP.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.VocaSearchP.title}</h2>
                                         <p>{projectsJSON.VocaSearchP.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.VocaSearchP.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.VocaSearchP.image}/>
                                         </div>
-                                        <div class="optionsContainer">
-                                            <a href={projectsJSON.VocaSearchP.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
-                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
+                                        <div className="optionsContainer">
+                                            <a href={projectsJSON.VocaSearchP.links[0]}><div className="cardButton"><i className="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div className="cardButton"><i className="card-icon-font fas fa-link"></i> See Live </div> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="card transition">
-                                        <h2 class="transition">{projectsJSON.RPG.title}</h2>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.RPG.title}</h2>
                                         <p>{projectsJSON.RPG.text}</p>
-                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
-                                        {/* <div class="card_circle transition"></div> */}
-                                        <div class="card_circle transition">
-                                            <img class="card-img" src={projectsJSON.RPG.image}/>
+                                        {/* <div className="cta-container transition"><a href="#" className="cta">Call to action</a></div> */}
+                                        {/* <div className="card_circle transition"></div> */}
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.RPG.image}/>
                                         </div>
-                                        <div class="optionsContainer">
-                                            <a href={projectsJSON.RPG.links[0]}><div class="cardButton"><i class="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
-                                            {/* <div class="cardButton"><i class="card-icon-font fas fa-link"></i> See Live </div> */}
+                                        <div className="optionsContainer">
+                                            <a href={projectsJSON.RPG.links[0]}><div className="cardButton"><i className="card-icon-font fab fa-github-alt"></i> See on GitHub </div></a>
+                                            {/* <div className="cardButton"><i className="card-icon-font fas fa-link"></i> See Live </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -651,26 +527,22 @@ export default class LandingPage extends React.Component{
                         </div>
                     </section>
 
-                    <section class="s2" ref={this.props.sections[3].ref}>
+                    <section className="s2" ref={this.props.sections[3].ref}>
                         
-                        <div class="main-container contactMeContainer">
+                        <div className="main-container contactMeContainer">
                             <a name="contact"></a>
                             <h3 className="categoryTitle" >Get In Touch!</h3>
-                            {/* <div class="greeting-wrapper"> */}
+                            {/* <div className="greeting-wrapper"> */}
                                 <h3 className="subHeadline" >Send me an email at:</h3>
                                 <a href="mailto: caroline.hoang@columbia.edu" target="_blank"><h2 className="emailHeadline">caroline.hoang@columbia.edu</h2></a>
                                 <h3 className="subHeadline" >70 Morningside Drive, New York, NY 10027</h3>
-                                <a href="mailto: caroline.hoang@columbia.edu" target="_blank"><h2 className="emailIcon"><i class="fa fa-envelope-open"></i></h2></a>
+                                <a href="mailto: caroline.hoang@columbia.edu" target="_blank"><h2 className="emailIcon"><i className="fa fa-envelope-open"></i></h2></a>
                                 {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
-                                
-
-                                {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
-                            {/* </div> */}
-                            {/* <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p>
-                            <div ><iframe src='https://gfycat.com/ifr/GrandFirstBalloonfish' frameborder='0' scrolling='no' width='100%' height='100%'  allowfullscreen></iframe></div><p> <a href="https://gfycat.com/grandfirstballoonfish-instrumental-hip-hop-casey-neistat-music">via Gfycat</a></p> */}
-
                         </div>
-                        {/* <div class="main-container">
+
+
+                        {/* VVVVVV This is the original contact form that we've removed in favor of just having a link VVVVVV */}
+                        {/* <div className="main-container">
                             <a href=""></a>
                             <h3 className="categoryTitle" >Get In Touch</h3>
 
@@ -678,79 +550,68 @@ export default class LandingPage extends React.Component{
                                 <a name="contact1"></a>
 
                                 <label>Name</label>
-                                <input class="input-field" type="text" name="name" />
+                                <input className="input-field" type="text" name="name" />
 
                                 <label>Subject</label>
-                                <input class="input-field" type="text" name="subject" />
+                                <input className="input-field" type="text" name="subject" />
 
                                 <label>Email</label>
-                                <input class="input-field" type="text" name="email" />
+                                <input className="input-field" type="text" name="email" />
 
                                 <label>Message</label>
-                                <textarea class="input-field" name="message"></textarea>
+                                <textarea className="input-field" name="message"></textarea>
 
                                 <input id="submit-btn" type="submit" value="Send" />
                             </form>
                         </div> */}
                     </section> 
 
-                    <section class="footer">
+                    <section className="footer">
                         
                             <a href=""></a>
                             © 2018-2020 Caroline Hoang • NY • &nbsp; <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">Resume</a> &nbsp; • &nbsp; <a href="mailto: caroline.hoang@columbia.edu" target="_blank">Contact Me</a>
                             {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
-
-                            {/* <div class="previewContainer" >
-                                        <div className="preview">
-                                            <div id="corner-tl" class="corner"></div>
-                                            <div id="corner-tr" class="corner"></div>
-                                            <h3>Who am I?</h3>
-                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
-                                            <div id="corner-br" class="corner"></div>
-                                            <div id="corner-bl" class="corner"></div>
-                                        </div>
-                                </div> */}
-                                {/* <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>  */}
+                            {/* <a href="https://twitter.com/Dave_Conner" className="btn btn-4"><span>Hover</span></a>  */}
                     </section> 
                 </div>
-                <div class="float-sm">
+                <div className="float-sm">
                     
                     <a href="mailto: caroline.hoang@columbia.edu" target="_blank">
-                        <div class="fl-fl float-tw">
-                            <div class="mediaIcon"><i class="float-icon-font fa fa-envelope-open"></i></div>
+                        <div className="fl-fl float-tw">
+                            <div className="mediaIcon"><i className="float-icon-font fa fa-envelope-open"></i></div>
                             <span> Contact Me!</span>
                         </div>
                     </a>
                     <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">
-                        <div class="fl-fl float-gp">
-                            <div class="mediaIcon"><i class="float-icon-font fa fa-file-alt"></i></div>
+                        <div className="fl-fl float-gp">
+                            <div className="mediaIcon"><i className="float-icon-font fa fa-file-alt"></i></div>
                             <span>My Resume!</span>
                         </div>
                     </a>
                     <a href="https://github.com/CarolineHoang/" target="_blank">
-                        <div class="fl-fl float-rs">
-                            <div class="mediaIcon"><i class="float-icon-font fa fa-github"></i></div>
+                        <div className="fl-fl float-rs">
+                            <div className="mediaIcon"><i className="float-icon-font fa fa-github"></i></div>
                             <span>GitHub</span>
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank">
-                        <div class="fl-fl float-ig">
-                            <div class="mediaIcon"><i class="float-icon-font fa fa-linkedin"></i></div>
+                        <div className="fl-fl float-ig">
+                            <div className="mediaIcon"><i className="float-icon-font fa fa-linkedin"></i></div>
                             <span>LinkedIn</span>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/caroline.hoang.35977/" target="_blank">
-                        <div class="fl-fl float-pn">
-                            <div class="mediaIcon"><i class="float-icon-font fa fa-facebook-f"></i></div>
+                        <div className="fl-fl float-pn">
+                            <div className="mediaIcon"><i className="float-icon-font fa fa-facebook-f"></i></div>
                             <span>Facebook</span>
                         </div>
                     </a>
                 </div>
-                {/* <div class="backdrop">
-                    <p class="text">Taitō <i class="fa fa-facebook"></i></p>
+                {/* <div className="backdrop">
+                    <p className="text">Taitō <i className="fa fa-facebook"></i></p>
                 </div>
-                <div class="backdrop2 fl-fl float-tw">
-                    <p class="text">Taitō</p>
+                <div className="backdrop2 fl-fl float-tw">
+                    <p className="text">Taitō</p>
                 </div> */}
             </div>
         //
@@ -805,7 +666,7 @@ export default class LandingPage extends React.Component{
             //                     <RowGZ>
             //                         <ButtonGZ id = "-" onClick={this.onChange} active={this.state.GroupSize -1 >=0} >-</ButtonGZ>
             //                         <Number>{this.state.GroupSize}</Number>
-            //                         <ButtonGZ class="button" id = "+" onClick={this.onChange} active={this.state.GroupSize +1 <= this.props.MAX_GROUP}>+</ButtonGZ>
+            //                         <ButtonGZ className="button" id = "+" onClick={this.onChange} active={this.state.GroupSize +1 <= this.props.MAX_GROUP}>+</ButtonGZ>
             //                     </RowGZ> 
             //                 </DropdownContent>
             //             </Dropdown>
