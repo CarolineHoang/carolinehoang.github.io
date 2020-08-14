@@ -320,7 +320,7 @@ export default class LandingPage extends React.Component{
                 <div className= "landingImage"> 
 
                 
-                    <section className="s1 " ref={this.props.sections[0].ref}>\
+                    <section className="s1 " ref={this.props.sections[0].ref}>
                         <div className="main-container">
                             <div className="greeting-wrapper">
                                 <h1 className="nameHeadline">Caroline Hoang</h1>
