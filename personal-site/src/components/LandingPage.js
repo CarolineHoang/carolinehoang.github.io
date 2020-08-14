@@ -346,12 +346,35 @@ export default class LandingPage extends React.Component{
                                     </div>
 
                                     <p id="settings-note">*Theme settings will be saved for<br/>your next vist</p> */}
+                                
+                                <div class="previewContainer" >
+                                        <div className="preview">
+                                            <div id="corner-tl" class="corner"></div>
+                                            <div id="corner-tr" class="corner"></div>
+                                            <h3>Who am I?</h3>
+                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
+                                            <div id="corner-br" class="corner"></div>
+                                            <div id="corner-bl" class="corner"></div>
+                                        </div>
+                                </div>
+                                
                                 </div>
 
                                 <div class="right-column">
 
-                                    <div id="preview-shadow">
-                                        <div id="preview">
+                                    {/* <div className ="preview-shadow"> */}
+                                    <div class="previewContainer" >
+                                        <div className="preview">
+                                            <div id="corner-tl" class="corner"></div>
+                                            <div id="corner-tr" class="corner"></div>
+                                            <h3>Who am I?</h3>
+                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
+                                            <div id="corner-br" class="corner"></div>
+                                            <div id="corner-bl" class="corner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="previewContainer" >
+                                        <div className="preview">
                                             <div id="corner-tl" class="corner"></div>
                                             <div id="corner-tr" class="corner"></div>
                                             <h3>Who am I?</h3>
@@ -362,22 +385,91 @@ export default class LandingPage extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div class="about-wrapper">
-                                <div class="about-me">
-                                    <h4>More about me</h4>
+                            <div className ="about-wrapper">
+                            {/* <div className ="left-column"> */}
+                                {/* <div class="about-me"> */}
+                                {/* <div className= "preview-shadow resumeWrapper"> */}
+                                <div class="previewContainer" >
+                                    <div className="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>Looking for my Resume?</h3>
+                                        <p>You can find it here.</p>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div>
+
+                                <div class="previewContainer" >
+                                    <div className="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>You can also find me on:</h3>
+
+                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div>
+                                <div class="previewContainer" >
+                                    <div className="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>You can also find me on:</h3>
+
+                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div>
+                                <div class="previewContainer" >
+                                    <div className="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>You can also find me on:</h3>
+
+                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div>
+                                {/* </div> */}
+                                {/* <div className= "preview-shadow resumeWrapper">
+                                    <div id="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>Looking for my Resume?</h3>
+                                        <p>You can find it here.</p>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
+                                    </div>
+                                </div> */}
+                                    {/* <h4>More about me</h4>
 
                                     <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+                                    <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p> */}
 
 
-                                    <hr/>
+                                    {/* <hr/> */}
 
-                                    <h4>TOP EXPERTISE</h4>
+                                    {/* <h4>TOP EXPERTISE</h4>
 
-                                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p> */}
 
-                                    <div id="skills">
+                                    {/* <div id="skills">
                                         <ul>
                                             <li>Python</li>
                                             <li>Django</li>
@@ -394,19 +486,27 @@ export default class LandingPage extends React.Component{
                                             <li>HTML/CSS</li>
                                         </ul>
 
+                                    </div> */}
+
+                                {/* </div> */}
+
+                                {/* <div className= "preview-shadow findMeWrapper"> */}
+                                <div class="previewContainer" >
+                                    <div className="preview" >
+                                        <div id="corner-tl" class="corner"></div>
+                                        <div id="corner-tr" class="corner"></div>
+                                        <h3>You can also find me on:</h3>
+
+                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
+                                        <br/>
+                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
+                                        <div id="corner-br" class="corner"></div>
+                                        <div id="corner-bl" class="corner"></div>
                                     </div>
-
                                 </div>
-
-                                
-                                <div class="social-links">
-                                    <img id="social_img" src="images/follow.jpg" />
-                                    <h3>Find me on Twitter & Youtube</h3>
-
-                                    <a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
-                                    <br/>
-                                    <a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
-                                </div>
+                              
                             </div>
 
                         </div>
@@ -421,8 +521,7 @@ export default class LandingPage extends React.Component{
 
                                 
 
-                                <div>
-                                    <div class="post">
+                                {/* <div>
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">Spectator Site</h6>
@@ -430,19 +529,22 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">Awesome Headline</h2>
+                                        <h2 class="transition">Spectator Site</h2>
                                         <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true"/>
+                                        <div class="card_circle transition">
+                                            <img class="card-img" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true"/>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">Awesome Headline</h2>
+                                        <h2 class="transition">theShaft</h2>
                                         <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
@@ -452,14 +554,14 @@ export default class LandingPage extends React.Component{
 
                                 <div>
                                     <div class="card transition">
-                                        <h2 class="transition">Awesome Headline</h2>
+                                        <h2 class="transition">Loopy</h2>
                                         <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
                                         {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
                                         {/* <div class="card_circle transition"></div> */}
-                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true"/>
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true"/>
                                     </div>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <div class="post">
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true" />
                                         <div class="post-preview">
@@ -468,8 +570,8 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div>
+                                </div> */}
+                                {/* <div>
                                     <div class="post">
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true" />
                                         <div class="post-preview">
@@ -478,12 +580,19 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
+
                                 <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">ScoreIT</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true"/>
+                                    </div>
+                                </div>
+                                {/* <div>
                                     <div class="post">
-                                        {/* <img class="thumbnail" src="images/dash.jpg" /> */}
-                                        {/* <iframe src="https://www.columbiaspectator.com/" class="thumbnail"></iframe> */}
-                                        {/* <object  type="text/html" data="https://www.sitepoint.com/community/t/embed-a-webpage-within-another-webpage/230037/4"></object> */}
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/ScoreIT.png?raw=true" />
                                         <div class="post-preview">
                                             <h6 class="post-title">ScoreIT</h6>
@@ -491,8 +600,17 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">VocaSearchP</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true"/>
+                                    </div>
+                                </div>
+                                {/* <div>
                                     <div class="post">
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Vocaloid2.png?raw=true" />
                                         <div class="post-preview">
@@ -501,9 +619,18 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <div></div> */}
                                 <div>
+                                    <div class="card transition">
+                                        <h2 class="transition">RPG Site</h2>
+                                        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        {/* <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div> */}
+                                        {/* <div class="card_circle transition"></div> */}
+                                        <img class="card_circle transition" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true"/>
+                                    </div>
+                                </div>
+                                {/* <div>
                                     <div class="post">
                                         <img class="thumbnail" src="https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/RPG.png?raw=true" />
                                         <div class="post-preview">
@@ -512,7 +639,7 @@ export default class LandingPage extends React.Component{
                                             <a href="post.html">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <div>
                                     <div class="card transition">
                                         <h2 class="transition">Awesome Headline</h2>
@@ -560,7 +687,16 @@ export default class LandingPage extends React.Component{
                             Copyright Caroline Hoang . Resume . Contaact Me
                             {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
 
-            
+                            <div class="previewContainer" >
+                                        <div className="preview">
+                                            <div id="corner-tl" class="corner"></div>
+                                            <div id="corner-tr" class="corner"></div>
+                                            <h3>Who am I?</h3>
+                                            <p>I'm a rising Junior studying Computer Science at Columbia University.</p>
+                                            <div id="corner-br" class="corner"></div>
+                                            <div id="corner-bl" class="corner"></div>
+                                        </div>
+                                </div>
                     </section> 
                 </div>
                 <div class="float-sm">
