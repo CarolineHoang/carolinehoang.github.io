@@ -387,8 +387,8 @@ export default class LandingPage extends React.Component{
                                     <div className="preview" >
                                         <div id="corner-tl" className="corner"></div>
                                         <div id="corner-tr" className="corner"></div>
-                                        <h3>Looking for my Resume?</h3>
-                                        <p>You can find it <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">Here</a>.</p>
+                                        <h3>Looking for my resume?</h3>
+                                        <p>You can find it <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">here</a>.</p>
                                         <div id="corner-br" className="corner"></div>
                                         <div id="corner-bl" className="corner"></div>
                                     </div>
