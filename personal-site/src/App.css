@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 2s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Background layer with an image */
+.backdrop {
+  background-color: transparent;
+  /* background: url("https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1559739084/0619_White_OnlineForms_2_600x500_zfqkk2.jpg") center; */
+}
+.backdrop2 {
+  background: transparent center;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+/* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+.text {
+  font-size: 5rem;
+  color: white;
+  background: rgb(59, 2, 6);
+  mix-blend-mode: multiply;
+  width: fit-content;
+}
+
+.float-right{
+  position: absolute;
+  right: 0px;
+  bottom: 10vw;
+  z-index: 20000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
