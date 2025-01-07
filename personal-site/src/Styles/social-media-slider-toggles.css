@@ -59,27 +59,28 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-  .float-fb {
+
+  .float-pos1 { /* originally float-fb */
     top: 160px;
   }
   
-  .float-tw {
+  .float-pos2 { /* originally float-tw */
     top: 215px;
   }
   
-  .float-gp {
+  .float-pos3 { /* originally float-gp */
     top: 270px;
   }
   
-  .float-rs {
+  .float-pos4 { /* originally float-rs */
     top: 325px;
   }
   
-  .float-ig {
+  .float-pos5 { /* originally float-ig */
     top: 380px;
   }
   
-  .float-pn {
+  .float-pos6 { /* originally float-pn */
     top: 435px;
   }
   

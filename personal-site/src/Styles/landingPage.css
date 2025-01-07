@@ -91,6 +91,7 @@
       /* background-color: var(--secondaryColor);
       border-bottom:1px solid var(--borderColor); */
     overflow:auto;
+    overflow-x: hidden;
     /* margin: 0px 10vw; */
   }
 

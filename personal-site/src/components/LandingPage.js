@@ -385,7 +385,7 @@ export default class LandingPage extends React.Component{
                             {/* <div className ="left-column"> */}
                                 {/* <div className="about-me"> */}
                                 {/* <div className= "preview-shadow resumeWrapper"> */}
-                                <div className="previewContainer" >
+                                {/* <div className="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" className="corner"></div>
                                         <div id="corner-tr" className="corner"></div>
@@ -394,9 +394,9 @@ export default class LandingPage extends React.Component{
                                         <div id="corner-br" className="corner"></div>
                                         <div id="corner-bl" className="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="previewContainer" >
+                                {/* <div className="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" className="corner"></div>
                                         <div id="corner-tr" className="corner"></div>
@@ -409,7 +409,7 @@ export default class LandingPage extends React.Component{
                                         <div id="corner-br" className="corner"></div>
                                         <div id="corner-bl" className="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
                                 
                             </div>
 
@@ -582,7 +582,7 @@ export default class LandingPage extends React.Component{
                     <section className="footer">
                         
                             <a href=""></a>
-                            2018-2025 &nbsp;• &nbsp; <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">Resume</a> &nbsp; • &nbsp; <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer">Contact Me</a>
+                            • 2018-2025 •{/* &nbsp;• &nbsp; <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">Resume</a> &nbsp; • &nbsp; <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer">Contact Me</a>*/}
                             {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
                             {/* <a href="https://twitter.com/Dave_Conner" className="btn btn-4"><span>Hover</span></a>  */}
                     </section> 
@@ -590,25 +590,27 @@ export default class LandingPage extends React.Component{
                 <div className="float-sm">
                     
                     <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer">
-                        <div className="fl-fl float-tw">
+                        <div className="fl-fl float-pos4">
                             <div className="mediaIcon"><i className="float-icon-font fa fa-envelope-open"></i></div>
                             <span> Contact Me!</span>
                         </div>
                     </a>
-                    <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">
+                    {/* <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">
                         <div className="fl-fl float-gp">
                             <div className="mediaIcon"><i className="float-icon-font fa fa-file-alt"></i></div>
                             <span>My Resume!</span>
                         </div>
-                    </a>
+                    </a> */}
                     <a href="https://github.com/CarolineHoang/" target="_blank" rel="noreferrer">
-                        <div className="fl-fl float-rs">
+                        <div className="fl-fl float-pos5">
+                        {/* <div className="fl-fl float-rs"> */}
                             <div className="mediaIcon"><i className="float-icon-font fa fa-github"></i></div>
                             <span>GitHub</span>
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank" rel="noreferrer">
-                        <div className="fl-fl float-ig">
+                        <div className="fl-fl float-pos6">
+                        {/* <div className="fl-fl float-ig"> */}
                             <div className="mediaIcon"><i className="float-icon-font fa fa-linkedin"></i></div>
                             <span>LinkedIn</span>
                         </div>
