@@ -281,6 +281,7 @@ import '../Styles/landingPage.css'
 
 
 const projectsJSON = {
+    Portfolio: {title: 'My Portfolio', links: [], image:"" , text: 'A place for my projects. Built with React.js.' },
     Spectator: {title: 'Daily Spectator', links: ['https://www.columbiaspectator.com/'], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Spectator.png?raw=true" , text: 'A news site that delivers Columbia and Morningside related news and shares articles written by students for students' },
     theShaft: {title: 'theShaft', links: ['https://www.theshaft.info/explore'] ,image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/theShaft.png?raw=true", text: 'A website that informs Columbia Students of how the Housing Lottery opperates and organizes information about the dorms' },
     Loopy: {title: 'Loopy', links: [], image:"https://github.com/CarolineHoang/wsite2/blob/master/personal-site/src/Assets/Loopy.png?raw=true", text: 'A site that allows the user to import sounds to use in a looping sequencer (CodeLabs Project)' },
@@ -325,7 +326,7 @@ export default class LandingPage extends React.Component{
                             <div className="greeting-wrapper">
                                 <h1 className="nameHeadline">Caroline Hoang</h1>
                                 {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
-                                <h3 className="subHeadline" >CS Student, Developer, Tech Enthusiast</h3>
+                                <h3 className="subHeadline" >CS Alum, Developer, Tech Enthusiast</h3>
 
                                 {/* <h1 className="nameHeadline">Hi, I'm Caroline Hoang</h1> */}
                             </div>
@@ -371,7 +372,9 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-tl" className="corner"></div>
                                             <div id="corner-tr" className="corner"></div>
                                             <h3>Who am I?</h3>
-                                            <p>I'm a Senior based in NY and studying Computer Science at Columbia University.</p>
+                                            <p>I'm a Software Engineer based in New York and an Alumni of Columbia University with a <br/>Bachelor of Science in Computer Science.</p>
+                                            <p>My specialty lies in the design, development, and implementation of web-based applications and service, and I love bringing projects to fruition.</p>
+                                            {/* <p>In my freetime, I like to draw, listen to music, and fiddle with code.</p> */}
                                             <div id="corner-br" className="corner"></div>
                                             <div id="corner-bl" className="corner"></div>
                                         </div>
@@ -383,32 +386,31 @@ export default class LandingPage extends React.Component{
                             {/* <div className ="left-column"> */}
                                 {/* <div className="about-me"> */}
                                 {/* <div className= "preview-shadow resumeWrapper"> */}
-                                <div className="previewContainer" >
+                                {/* <div className="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" className="corner"></div>
                                         <div id="corner-tr" className="corner"></div>
                                         <h3>Looking for my resume?</h3>
-                                        <p>You can find it <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">here</a>.</p>
+                                        <p>You can find it <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">here</a>.</p>
                                         <div id="corner-br" className="corner"></div>
                                         <div id="corner-bl" className="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="previewContainer" >
+                                {/* <div className="previewContainer" >
                                     <div className="preview" >
                                         <div id="corner-tl" className="corner"></div>
                                         <div id="corner-tr" className="corner"></div>
                                         <h3>You can also find me on:</h3>
 
-                                        <a target="_blank" href="https://github.com/CarolineHoang">GitHub: @CarolineHoang</a>
+                                        <a href="https://github.com/CarolineHoang" target="_blank" rel="noreferrer">GitHub: @CarolineHoang</a>
                                         <br/>
-                                        <a target="_blank" href="https://www.linkedin.com/in/carolinehoang/">LinkedIn: .../in/carolinehoang/</a>
+                                        <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank" rel="noreferrer">LinkedIn: .../in/carolinehoang/</a>
                                         <br/>
-                                        <a target="_blank" href="https://www.facebook.com/caroline.hoang.35977">FaceBook: .../caroline.hoang.35977</a>
                                         <div id="corner-br" className="corner"></div>
                                         <div id="corner-bl" className="corner"></div>
                                     </div>
-                                </div>
+                                </div> */}
                                 
                             </div>
 
@@ -423,7 +425,18 @@ export default class LandingPage extends React.Component{
 
                             <div className="post-wrapper">
 
-                            
+                                {/* <div>
+                                    <div className="card transition">
+                                        <h2 className="transition">{projectsJSON.Portfolio.title}</h2>
+                                        <p>{projectsJSON.Portfolio.text}</p>
+                                        <div className="card_circle transition">
+                                            <img className="card-img" src={projectsJSON.Portfolio.image}/>
+                                        </div>
+                                        <div className="optionsContainer">
+                                            <div>~ You are here! :D ~</div>
+                                        </div>
+                                    </div>
+                                </div> */}
                                 <div>
                                     <div className="card transition">
                                         <h2 className="transition">{projectsJSON.Spectator.title}</h2>
@@ -534,9 +547,10 @@ export default class LandingPage extends React.Component{
                             <h3 className="categoryTitle" >Get In Touch!</h3>
                             {/* <div className="greeting-wrapper"> */}
                                 <h3 className="subHeadline" >Send me an email at:</h3>
-                                <a href="mailto: caroline.hoang@columbia.edu" target="_blank"><h2 className="emailHeadline">caroline.hoang@columbia.edu</h2></a>
-                                <h3 className="subHeadline" >70 Morningside Drive, New York, NY 10027</h3>
-                                <a href="mailto: caroline.hoang@columbia.edu" target="_blank"><h2 className="emailIcon"><i className="fa fa-envelope-open"></i></h2></a>
+                                <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer"><h2 className="emailHeadline">carolinejhoang22@gmail.com</h2></a>
+                                <h3 className="subHeadline" >I look forward to hearing from you!</h3>
+                                
+                                <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer"><h2 className="emailIcon"><i className="fa fa-envelope-open"></i></h2></a>
                                 {/* <h3 className="nameHeadline">CS Student ○ Developer ○ Something</h3> */}
                         </div>
 
@@ -569,41 +583,37 @@ export default class LandingPage extends React.Component{
                     <section className="footer">
                         
                             <a href=""></a>
-                            © 2018-2020 Caroline Hoang • NY • &nbsp; <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">Resume</a> &nbsp; • &nbsp; <a href="mailto: caroline.hoang@columbia.edu" target="_blank">Contact Me</a>
+                            • 2018-2025 •{/* &nbsp;• &nbsp; <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">Resume</a> &nbsp; • &nbsp; <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer">Contact Me</a>*/}
                             {/* <h3 className="categoryTitle" >Get In Touch</h3> */}
                             {/* <a href="https://twitter.com/Dave_Conner" className="btn btn-4"><span>Hover</span></a>  */}
                     </section> 
                 </div>
                 <div className="float-sm">
                     
-                    <a href="mailto: caroline.hoang@columbia.edu" target="_blank">
-                        <div className="fl-fl float-tw">
+                    <a href="mailto: carolinejhoang22@gmail.com" target="_blank" rel="noreferrer">
+                        <div className="fl-fl float-pos4">
                             <div className="mediaIcon"><i className="float-icon-font fa fa-envelope-open"></i></div>
                             <span> Contact Me!</span>
                         </div>
                     </a>
-                    <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank">
+                    {/* <a href="https://drive.google.com/drive/folders/13e-jBLED102tljJy7QB4QyvkRyVSNpzC?usp=sharing" target="_blank" rel="noreferrer">
                         <div className="fl-fl float-gp">
                             <div className="mediaIcon"><i className="float-icon-font fa fa-file-alt"></i></div>
                             <span>My Resume!</span>
                         </div>
-                    </a>
-                    <a href="https://github.com/CarolineHoang/" target="_blank">
-                        <div className="fl-fl float-rs">
+                    </a> */}
+                    <a href="https://github.com/CarolineHoang/" target="_blank" rel="noreferrer">
+                        <div className="fl-fl float-pos5">
+                        {/* <div className="fl-fl float-rs"> */}
                             <div className="mediaIcon"><i className="float-icon-font fa fa-github"></i></div>
                             <span>GitHub</span>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank">
-                        <div className="fl-fl float-ig">
+                    <a href="https://www.linkedin.com/in/carolinehoang/" target="_blank" rel="noreferrer">
+                        <div className="fl-fl float-pos6">
+                        {/* <div className="fl-fl float-ig"> */}
                             <div className="mediaIcon"><i className="float-icon-font fa fa-linkedin"></i></div>
                             <span>LinkedIn</span>
-                        </div>
-                    </a>
-                    <a href="https://www.facebook.com/caroline.hoang.35977/" target="_blank">
-                        <div className="fl-fl float-pn">
-                            <div className="mediaIcon"><i className="float-icon-font fa fa-facebook-f"></i></div>
-                            <span>Facebook</span>
                         </div>
                     </a>
                 </div>

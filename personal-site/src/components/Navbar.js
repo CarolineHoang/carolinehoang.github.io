@@ -21,7 +21,7 @@ export default class Navbar extends React.Component {
             <div className = "navbarWrapper">
                 <div className = "navbarWrapperInner">
                     <div className = "navbarWrapperInner2">
-                        <div className = "crownLogo" href= "https://www.columbiaspectator.com/"/>
+                        <div className = "crownLogo"/>
                         <div className = "itemContainer navOptions">
                             {[...NavItems]}
                         </div>
