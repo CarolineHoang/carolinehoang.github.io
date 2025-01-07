@@ -373,7 +373,7 @@ export default class LandingPage extends React.Component{
                                             <div id="corner-tr" className="corner"></div>
                                             <h3>Who am I?</h3>
                                             <p>I'm a Software Engineer based in New York and an Alumni of Columbia University with a <br/>Bachelor of Science in Computer Science.</p>
-                                            <p>My specialty lies in the design, development, and implementation of web-based applications and service, and I love bringing projects to fruition.</p>
+                                            <p>My specialty lies in the design, development, and implementation of web-based applications and services, and I love bringing projects to fruition.</p>
                                             {/* <p>In my freetime, I like to draw, listen to music, and fiddle with code.</p> */}
                                             <div id="corner-br" className="corner"></div>
                                             <div id="corner-bl" className="corner"></div>
