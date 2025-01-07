@@ -75,7 +75,7 @@
   header{
     /* background-color: #36B4DB; */
     /* #091a1d */
-    background: linear-gradient(0deg, #fb84b2 0%, #fb84b2 15%,  #091a1d 30%, #091a1d 50%, #36B4DB 90%, #36B4DB 100%, rgba(255,155,155,1) 100%);
+    background: linear-gradient(0deg, #377cdd 0%, #84ebfb 15%,  #091a1d 30%, #091a1d 50%, #36B4DB 90%, #36B4DB 100%, rgba(255,155,155,1) 100%);
   }
   
   .s1{
